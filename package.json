@@ -1,10 +1,11 @@
 {
   "name": "open-gpu-catalog",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
     "check": "node scripts/build.mjs --check",
     "test": "node --test"
   },

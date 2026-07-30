@@ -3,22 +3,22 @@ import test from 'node:test'
 
 async function loadProjection() {
   try {
-    const module = await import('../src/llmsizer.mjs')
-    return module.buildLlmsizerArtifact
+    const module = await import('../src/runtime.mjs')
+    return module.buildRuntimeArtifact
   } catch {
     return undefined
   }
 }
 
-test('llmsizer artifact includes usable discrete and unified GPUs only', async () => {
-  const buildLlmsizerArtifact = await loadProjection()
+test('runtime artifact includes usable discrete and unified GPUs only', async () => {
+  const buildRuntimeArtifact = await loadProjection()
   assert.equal(
-    typeof buildLlmsizerArtifact,
+    typeof buildRuntimeArtifact,
     'function',
-    'buildLlmsizerArtifact must be implemented',
+    'buildRuntimeArtifact must be implemented',
   )
 
-  const artifact = buildLlmsizerArtifact({
+  const artifact = buildRuntimeArtifact({
     schema_version: '1.0.0',
     catalog_version: '1.0.0',
     integrated_gpu_patterns: ['Intel Iris'],

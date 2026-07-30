@@ -4,6 +4,9 @@ A public, reproducible GPU catalog with stable identifiers, source provenance,
 vendor-verified corrections, browser-detection aliases, and generated artifacts
 for applications that need reliable GPU memory data.
 
+[Browse and search the catalog](https://onepunk.github.io/open-gpu-catalog/)
+or use the versioned JSON artifacts directly.
+
 ## Why this exists
 
 No single public GPU database is both broad and authoritative. Open GPU Catalog
@@ -29,7 +32,7 @@ ID and TechPowerUp URL where available.
 ## Artifacts
 
 - `dist/catalog.json` — the complete normalized catalog and source registry.
-- `dist/llmsizer.json` — a compact projection containing GPUs with usable
+- `dist/runtime.json` — a compact projection containing GPUs with usable
   capacity and bandwidth data, unified-memory semantics, NVLink flags, aliases,
   and integrated-GPU detection patterns.
 - `schema/catalog.schema.json` — the versioned public schema.
@@ -40,10 +43,10 @@ Raw GitHub URL:
 https://raw.githubusercontent.com/onepunk/open-gpu-catalog/main/dist/catalog.json
 ```
 
-llmsizer consumer URL:
+Runtime-oriented consumer URL:
 
 ```text
-https://raw.githubusercontent.com/onepunk/open-gpu-catalog/main/dist/llmsizer.json
+https://raw.githubusercontent.com/onepunk/open-gpu-catalog/main/dist/runtime.json
 ```
 
 ## Data model
@@ -69,10 +72,12 @@ Requires Node.js 20 or newer and has no runtime dependencies.
 npm test
 npm run build
 npm run check
+npm run build:pages
 ```
 
 `npm run build` regenerates both committed artifacts. `npm run check` fails when
-the committed artifacts differ from their deterministic build.
+the committed artifacts differ from their deterministic build. The Pages build
+copies the dependency-free search interface and complete catalog into `.pages/`.
 
 ## Contributing data
 

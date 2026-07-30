@@ -1,4 +1,4 @@
-const LLMSIZER_VENDORS = new Set(['apple', 'nvidia', 'amd', 'intel'])
+const RUNTIME_VENDORS = new Set(['apple', 'nvidia', 'amd', 'intel'])
 const VENDOR_ORDER = new Map([
   ['nvidia', 0],
   ['amd', 1],
@@ -6,13 +6,13 @@ const VENDOR_ORDER = new Map([
   ['apple', 3],
 ])
 
-export function buildLlmsizerArtifact(catalog) {
+export function buildRuntimeArtifact(catalog) {
   const gpus = catalog.gpus
     .filter(gpu => {
       const capacity = gpu.memory.capacity_gb
       const bandwidth = gpu.memory.bandwidth_gbps
       return (
-        LLMSIZER_VENDORS.has(gpu.vendor) &&
+        RUNTIME_VENDORS.has(gpu.vendor) &&
         typeof bandwidth === 'number' &&
         bandwidth > 0 &&
         (gpu.memory.unified || (typeof capacity === 'number' && capacity >= 1))

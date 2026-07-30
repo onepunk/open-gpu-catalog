@@ -55,9 +55,9 @@ test('published catalog contains the verified current GPU layer', async () => {
   assert.ok(catalog.gpus.every(gpu => gpu.provenance.length > 0))
 })
 
-test('published llmsizer artifact is a usable projection of the catalog', async () => {
-  const artifact = await readJson('../dist/llmsizer.json')
-  assert.ok(artifact, 'dist/llmsizer.json must be built')
+test('published runtime artifact is a usable projection of the catalog', async () => {
+  const artifact = await readJson('../dist/runtime.json')
+  assert.ok(artifact, 'dist/runtime.json must be built')
   assert.ok(artifact.gpus.length >= 1_500)
   assert.ok(artifact.gpus.some(gpu => gpu.name === 'Apple M5 Max' && gpu.unified))
   assert.ok(artifact.gpus.some(gpu => gpu.name === 'AMD Instinct MI455X'))

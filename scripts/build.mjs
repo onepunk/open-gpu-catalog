@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildCatalog } from '../src/catalog.mjs'
-import { buildLlmsizerArtifact } from '../src/llmsizer.mjs'
+import { buildRuntimeArtifact } from '../src/runtime.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -33,7 +33,7 @@ const [
 ])
 
 const catalog = buildCatalog({
-  catalogVersion: '1.0.0',
+  catalogVersion: '1.1.0',
   rightnow,
   additions,
   overrides,
@@ -44,7 +44,7 @@ const catalog = buildCatalog({
 })
 const artifacts = [
   ['dist/catalog.json', serialize(catalog)],
-  ['dist/llmsizer.json', serialize(buildLlmsizerArtifact(catalog))],
+  ['dist/runtime.json', serialize(buildRuntimeArtifact(catalog))],
 ]
 
 if (process.argv.includes('--check')) {
@@ -60,5 +60,5 @@ if (process.argv.includes('--check')) {
 
 console.log(
   `Catalog ${catalog.catalog_version}: ${catalog.gpus.length} GPUs, ` +
-  `${buildLlmsizerArtifact(catalog).gpus.length} llmsizer-compatible`,
+  `${buildRuntimeArtifact(catalog).gpus.length} runtime-ready`,
 )

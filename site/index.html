@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Search an open, provenance-aware catalog of GPU specifications."
+    >
+    <meta name="theme-color" content="#f6f8fb">
+    <title>Open GPU Catalog — Search GPU specifications</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to catalog</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./" aria-label="Open GPU Catalog home">
+          <span class="brand-mark" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </span>
+          <span>
+            <strong>Open GPU Catalog</strong>
+            <small>Specifications with provenance</small>
+          </span>
+        </a>
+
+        <nav class="header-links" aria-label="Project links">
+          <a href="./catalog.json" download>Download JSON</a>
+          <a
+            class="button button-secondary"
+            href="https://github.com/onepunk/open-gpu-catalog"
+          >
+            View source
+            <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span aria-hidden="true"></span>
+            Open data · Vendor-verified layers
+          </p>
+          <h1 id="page-title">Find the GPU behind the numbers.</h1>
+          <p class="hero-intro">
+            Search a reproducible catalog of graphics processors, accelerators,
+            and unified-memory systems. Every correction and addition points
+            back to its source.
+          </p>
+        </div>
+
+        <dl class="catalog-stats" aria-label="Catalog summary">
+          <div>
+            <dt>GPUs</dt>
+            <dd id="gpu-count">—</dd>
+          </div>
+          <div>
+            <dt>Sources</dt>
+            <dd id="source-count">—</dd>
+          </div>
+          <div>
+            <dt>Catalog</dt>
+            <dd id="catalog-version">—</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="catalog-section shell" aria-labelledby="catalog-heading">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Explore the data</p>
+            <h2 id="catalog-heading">GPU specifications</h2>
+          </div>
+          <p>
+            Capacity values describe the published maximum configuration.
+            Unified memory is labelled separately from dedicated VRAM.
+          </p>
+        </div>
+
+        <form class="filter-panel" id="catalog-filters">
+          <div class="search-field">
+            <label for="catalog-search">Search the catalog</label>
+            <div class="search-input-wrap">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"
+                />
+              </svg>
+              <input
+                id="catalog-search"
+                name="q"
+                type="search"
+                autocomplete="off"
+                placeholder="Try “RTX 5090”, “MI455X”, or “Apple M5”"
+              >
+              <kbd aria-label="Keyboard shortcut slash">/</kbd>
+            </div>
+          </div>
+
+          <div class="filter-grid">
+            <label>
+              <span>Vendor</span>
+              <select id="vendor-filter" name="vendor">
+                <option value="all">All vendors</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Device type</span>
+              <select id="type-filter" name="type">
+                <option value="all">All types</option>
+                <option value="accelerator">Accelerator</option>
+                <option value="discrete">Discrete</option>
+                <option value="integrated">Integrated</option>
+                <option value="soc">System on chip</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Memory</span>
+              <select id="memory-filter" name="memory">
+                <option value="all">Any memory</option>
+                <option value="dedicated">Dedicated</option>
+                <option value="unified">Unified</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Minimum capacity</span>
+              <select id="capacity-filter" name="min">
+                <option value="0">Any capacity</option>
+                <option value="8">8 GB+</option>
+                <option value="16">16 GB+</option>
+                <option value="24">24 GB+</option>
+                <option value="48">48 GB+</option>
+                <option value="80">80 GB+</option>
+                <option value="128">128 GB+</option>
+                <option value="256">256 GB+</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Status</span>
+              <select id="status-filter" name="status">
+                <option value="all">Any status</option>
+                <option value="active">Active</option>
+                <option value="announced">Announced</option>
+                <option value="discontinued">Discontinued</option>
+                <option value="unknown">Unknown</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Sort by</span>
+              <select id="sort-filter" name="sort">
+                <option value="name-asc">Name A–Z</option>
+                <option value="memory-desc">Memory, highest</option>
+                <option value="bandwidth-desc">Bandwidth, highest</option>
+                <option value="newest">Newest first</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="filter-actions">
+            <p id="active-filter-summary">Showing the complete catalog</p>
+            <button class="button button-quiet" id="clear-filters" type="reset">
+              Clear filters
+            </button>
+          </div>
+        </form>
+
+        <div class="results-toolbar">
+          <p id="result-status" role="status" aria-live="polite">
+            Loading catalog…
+          </p>
+          <p class="data-note">
+            <span aria-hidden="true">●</span>
+            Source-backed fields
+          </p>
+        </div>
+
+        <div id="loading-state" class="state-panel">
+          <span class="loader" aria-hidden="true"></span>
+          <div>
+            <strong>Loading GPU data</strong>
+            <p>Fetching the versioned catalog artifact.</p>
+          </div>
+        </div>
+
+        <div id="error-state" class="state-panel state-error" hidden>
+          <span aria-hidden="true">!</span>
+          <div>
+            <strong>The catalog could not be loaded</strong>
+            <p>Refresh the page, or download the JSON directly from the repository.</p>
+          </div>
+        </div>
+
+        <div id="empty-state" class="state-panel" hidden>
+          <span aria-hidden="true">0</span>
+          <div>
+            <strong>No GPUs match these filters</strong>
+            <p>Try a shorter model name, reduce the memory requirement, or clear all filters.</p>
+          </div>
+        </div>
+
+        <div id="results" hidden>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">GPU</th>
+                  <th scope="col">Vendor</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Memory</th>
+                  <th scope="col">Bandwidth</th>
+                  <th scope="col">Architecture</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody id="result-rows"></tbody>
+            </table>
+          </div>
+
+          <div class="result-cards" id="result-cards"></div>
+
+          <div class="show-more-wrap">
+            <button class="button button-secondary" id="show-more" type="button" hidden>
+              Show 50 more
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <p>
+          Open GPU Catalog · Apache-2.0 · Data should be uncertain before it is guessed.
+        </p>
+        <nav aria-label="Catalog resources">
+          <a href="./catalog.json" download>Catalog JSON</a>
+          <a href="https://github.com/onepunk/open-gpu-catalog/blob/main/schema/catalog.schema.json">
+            JSON Schema
+          </a>
+          <a href="https://github.com/onepunk/open-gpu-catalog/blob/main/NOTICE">
+            Attribution
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <noscript>
+      <div class="noscript">
+        JavaScript is required for interactive search. You can still
+        <a href="./catalog.json" download>download the catalog JSON</a>.
+      </div>
+    </noscript>
+  </body>
+</html>
