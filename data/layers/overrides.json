@@ -1,0 +1,36 @@
+[
+  {
+    "target_id": "nvidia-b200",
+    "source_id": "nvidia-hgx-b-series",
+    "changes": {
+      "memory": {
+        "capacity_gb": 180,
+        "type": "HBM3e",
+        "bandwidth_gbps": 8000
+      }
+    },
+    "fields": [
+      "memory.capacity_gb",
+      "memory.type",
+      "memory.bandwidth_gbps"
+    ],
+    "reason": "RightNow records one package partition; NVIDIA publishes total memory per B200 GPU."
+  },
+  {
+    "target_id": "nvidia-b300",
+    "source_id": "nvidia-hgx-b-series",
+    "changes": {
+      "memory": {
+        "capacity_gb": 288,
+        "type": "HBM3e",
+        "bandwidth_gbps": 8000
+      }
+    },
+    "fields": [
+      "memory.capacity_gb",
+      "memory.type",
+      "memory.bandwidth_gbps"
+    ],
+    "reason": "RightNow records one package partition; NVIDIA publishes total memory per B300 GPU."
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "id": "rightnow-gpu-database",
+    "name": "RightNow GPU Database",
+    "kind": "community",
+    "url": "https://github.com/RightNow-AI/RightNow-GPU-Database",
+    "license": "Apache-2.0",
+    "retrieved_at": "2026-07-30",
+    "revision": "dfb3c9a54b092ad78681abb5a044e146398092a2",
+    "notes": "Broad NVIDIA, AMD, and Intel coverage derived from TechPowerUp via dbgpu."
+  },
+  {
+    "id": "nvidia-hgx-b-series",
+    "name": "NVIDIA HGX AI Factory documentation",
+    "kind": "vendor",
+    "url": "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/components.html",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "nvidia-vera-rubin",
+    "name": "NVIDIA Vera Rubin NVL72",
+    "kind": "vendor",
+    "url": "https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "nvidia-nvlink-product-documentation",
+    "name": "NVIDIA NVLink product documentation",
+    "kind": "vendor",
+    "url": "https://www.nvidia.com/en-us/data-center/nvlink/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "amd-instinct-mi455x",
+    "name": "AMD Instinct MI455X product specifications",
+    "kind": "vendor",
+    "url": "https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "intel-arc-pro-b-series",
+    "name": "Intel Arc Pro B-Series quick reference guide",
+    "kind": "vendor",
+    "url": "https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2026-03/intel-arc-pro-b-series-graphics-quick-reference-guide-v1-0.pdf",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m1",
+    "name": "Apple M1 announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m1-pro-max",
+    "name": "Apple M1 Pro and M1 Max announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2021/10/apple-unveils-game-changing-macbook-pro/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m1-ultra",
+    "name": "Apple M1 Ultra announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2022/03/apple-unveils-m1-ultra-the-worlds-most-powerful-chip-for-a-personal-computer/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m2",
+    "name": "Apple M2 announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2022/06/apple-unveils-m2-with-breakthrough-performance-and-capabilities/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m2-pro-max",
+    "name": "Apple M2 Pro and M2 Max announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2023/01/apple-unveils-m2-pro-and-m2-max-next-generation-chips-for-next-level-workflows/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m2-ultra",
+    "name": "Apple M2 Ultra announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2023/06/apple-introduces-m2-ultra/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m3-family",
+    "name": "Apple M3, M3 Pro, and M3 Max announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m3-ultra",
+    "name": "Apple Mac Studio with M3 Ultra specifications",
+    "kind": "vendor",
+    "url": "https://support.apple.com/en-us/122211",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m4",
+    "name": "Apple M4 announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m4-pro-max",
+    "name": "Apple M4 Pro and M4 Max announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m5",
+    "name": "Apple M5 announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2025/10/apple-unleashes-m5-the-next-big-leap-in-ai-performance-for-apple-silicon/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "apple-m5-pro-max",
+    "name": "Apple M5 Pro and M5 Max announcement",
+    "kind": "vendor",
+    "url": "https://www.apple.com/newsroom/2026/03/apple-debuts-m5-pro-and-m5-max-to-supercharge-the-most-demanding-pro-workflows/",
+    "retrieved_at": "2026-07-30"
+  }
+]

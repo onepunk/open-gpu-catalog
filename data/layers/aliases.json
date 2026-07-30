@@ -1,0 +1,38 @@
+[
+  {
+    "target_id": "nvidia-b200",
+    "aliases": ["NVIDIA B200"]
+  },
+  {
+    "target_id": "nvidia-b300",
+    "aliases": ["NVIDIA B300"]
+  },
+  {
+    "target_id": "nvidia-vera-rubin",
+    "aliases": ["Vera Rubin GPU", "NVIDIA Rubin GPU"]
+  },
+  {
+    "target_id": "amd-instinct-mi455x",
+    "aliases": ["Instinct MI455X", "MI455X"]
+  },
+  {
+    "target_id": "intel-arc-pro-b70",
+    "aliases": ["Arc Pro B70", "Intel(R) Arc(TM) Pro B70 Graphics"]
+  },
+  {
+    "target_id": "intel-arc-pro-b65",
+    "aliases": ["Arc Pro B65", "Intel(R) Arc(TM) Pro B65 Graphics"]
+  },
+  {
+    "target_id": "apple-m5",
+    "aliases": ["Apple M5 GPU"]
+  },
+  {
+    "target_id": "apple-m5-pro",
+    "aliases": ["Apple M5 Pro GPU"]
+  },
+  {
+    "target_id": "apple-m5-max",
+    "aliases": ["Apple M5 Max GPU"]
+  }
+]

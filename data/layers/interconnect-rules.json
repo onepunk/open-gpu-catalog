@@ -1,0 +1,31 @@
+[
+  {
+    "vendor": "nvidia",
+    "interconnect": "nvlink",
+    "source_id": "nvidia-nvlink-product-documentation",
+    "name_patterns": [
+      "^(TITAN V|TITAN V CEO Edition|TITAN RTX|GeForce RTX 3090|GeForce RTX 2080 Ti|Quadro GP100|Quadro GV100|A100X)$",
+      "^Tesla (V100|P100)\\b",
+      "^A100\\b",
+      "^A800\\b",
+      "^A40\\b",
+      "^H100\\b",
+      "^H200\\b",
+      "^H800\\b",
+      "^B100\\b",
+      "^B200\\b",
+      "^B300\\b",
+      "^GRID A100[AB]?$",
+      "^DRIVE A100",
+      "^Quadro RTX (5000|6000|8000)\\b",
+      "^RTX A(4500|5000|5500|6000)\\b"
+    ],
+    "exclude_patterns": [
+      "Mobile",
+      "Max-Q",
+      "Laptop",
+      "Refresh",
+      "X2"
+    ]
+  }
+]

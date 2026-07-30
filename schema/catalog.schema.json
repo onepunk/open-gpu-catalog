@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/onepunk/open-gpu-catalog/schema/catalog.schema.json",
+  "title": "Open GPU Catalog",
+  "type": "object",
+  "required": ["schema_version", "catalog_version", "sources", "gpus", "integrated_gpu_patterns"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "catalog_version": {"type": "string"},
+    "sources": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/source"}
+    },
+    "gpus": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/gpu"}
+    },
+    "integrated_gpu_patterns": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["id", "name", "kind", "url", "retrieved_at"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "name": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["vendor", "community", "derived"]},
+        "url": {"type": "string", "format": "uri"},
+        "retrieved_at": {"type": "string", "format": "date"},
+        "license": {"type": "string"},
+        "revision": {"type": "string"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source_id", "fields"],
+      "properties": {
+        "source_id": {"type": "string"},
+        "source_record_id": {"type": "string"},
+        "source_url": {"type": "string", "format": "uri"},
+        "fields": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "method": {"enum": ["derived-rule"]}
+      },
+      "additionalProperties": false
+    },
+    "gpu": {
+      "type": "object",
+      "required": ["id", "name", "vendor", "device_type", "memory", "aliases", "interconnects", "status", "provenance"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "name": {"type": "string", "minLength": 1},
+        "vendor": {"type": "string", "minLength": 1},
+        "device_type": {"enum": ["discrete", "integrated", "accelerator", "soc"]},
+        "architecture": {"type": "string"},
+        "generation": {"type": "string"},
+        "release_date": {"type": "string", "format": "date"},
+        "memory": {
+          "type": "object",
+          "required": ["capacity_gb", "bandwidth_gbps", "unified"],
+          "properties": {
+            "capacity_gb": {"type": ["number", "null"], "exclusiveMinimum": 0},
+            "type": {"type": "string"},
+            "bandwidth_gbps": {"type": ["number", "null"], "minimum": 0},
+            "unified": {"type": "boolean"}
+          },
+          "additionalProperties": false
+        },
+        "aliases": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "interconnects": {
+          "type": "array",
+          "items": {"enum": ["nvlink", "ualink", "infinity-fabric", "xgmi", "pcie"]},
+          "uniqueItems": true
+        },
+        "status": {"enum": ["active", "announced", "discontinued", "unknown"]},
+        "provenance": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/provenance"},
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
