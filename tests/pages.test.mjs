@@ -26,6 +26,7 @@ test('catalog page exposes an accessible searchable data explorer shell', async 
   assert.match(css, /@media \(max-width: 760px\)/)
   assert.match(css, /:focus-visible/)
   assert.match(app, /import \{ searchCatalog \} from '\.\/search\.mjs'/)
+  assert.match(app, /import \{ buildSourceLinks \} from '\.\/source-links\.mjs'/)
 })
 
 test('the repository defines a dependency-free GitHub Pages build and deploy workflow', async () => {

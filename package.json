@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "audit:sources": "node scripts/audit-source-links.mjs",
     "build": "node scripts/build.mjs",
     "build:pages": "node scripts/build-pages.mjs",
     "check": "node scripts/build.mjs --check",

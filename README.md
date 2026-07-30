@@ -73,11 +73,15 @@ npm test
 npm run build
 npm run check
 npm run build:pages
+npm run audit:sources
 ```
 
 `npm run build` regenerates both committed artifacts. `npm run check` fails when
 the committed artifacts differ from their deterministic build. The Pages build
 copies the dependency-free search interface and complete catalog into `.pages/`.
+The source audit reports which records have first-party vendor documentation,
+which currently rely on a specific third-party specification page, and which
+need source enrichment. Use `npm run audit:sources -- --json` for record IDs.
 
 ## Contributing data
 

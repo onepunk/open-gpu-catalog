@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Display direct source destinations instead of import-layer names.
+- Prioritize first-party vendor documentation ahead of third-party references.
+- Add a deterministic source-link coverage audit for future enrichment.
+
 ## 1.1.0 — 2026-07-30
 
 - Rename the compact consumer artifact to the agnostic `dist/runtime.json`.

@@ -1,5 +1,6 @@
 import { searchCatalog } from './search.mjs'
 import { buildSearchParams, readSearchState } from './search.mjs'
+import { buildSourceLinks } from './source-links.mjs'
 
 const PAGE_SIZE = 50
 
@@ -76,19 +77,16 @@ function createStatus(status) {
 
 function provenanceLinks(gpu) {
   const container = createElement('div', { className: 'source-links' })
-  const seen = new Set()
 
-  for (const item of gpu.provenance ?? []) {
-    const source = sources.get(item.source_id)
-    const url = item.source_url ?? source?.url
-    const key = `${item.source_id}:${url}`
-    if (!url || seen.has(key)) continue
-    seen.add(key)
-
-    const link = createElement('a', { text: source?.name ?? item.source_id })
-    link.href = url
+  for (const sourceLink of buildSourceLinks(gpu, sources)) {
+    const link = createElement('a', {
+      className: sourceLink.primary ? 'source-primary' : '',
+      text: sourceLink.label,
+      title: sourceLink.url,
+    })
+    link.href = sourceLink.url
     link.target = '_blank'
-    link.rel = 'noreferrer'
+    link.rel = 'noopener noreferrer'
     container.append(link)
   }
 
