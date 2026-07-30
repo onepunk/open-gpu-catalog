@@ -29,6 +29,7 @@ test('catalog page exposes an accessible searchable data explorer shell', async 
   assert.match(html, /id="gpu-count"/)
   assert.doesNotMatch(html, /id="source-count"|id="catalog-version"/)
   assert.doesNotMatch(html, /Find the GPU behind the numbers|Open data · Vendor-verified/)
+  assert.doesNotMatch(html, /Source-backed fields|Data should be uncertain/)
   assert.match(css, /@media \(max-width: 760px\)/)
   assert.match(css, /:focus-visible/)
   assert.match(app, /import \{ searchCatalog \} from '\.\/search\.mjs'/)

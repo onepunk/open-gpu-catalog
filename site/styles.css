@@ -456,15 +456,6 @@ h2 {
   font-weight: 750;
 }
 
-.data-note {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.data-note span {
-  color: #16a085;
-}
-
 .state-panel {
   min-height: 180px;
   display: flex;
@@ -825,10 +816,6 @@ footer {
 
   .filter-actions p {
     padding-top: 12px;
-  }
-
-  .data-note {
-    display: none;
   }
 
   .table-wrap {
