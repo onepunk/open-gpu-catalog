@@ -36,15 +36,16 @@ test('catalog page exposes an accessible searchable data explorer shell', async 
   assert.match(app, /import \{ buildSourceLinks \} from '\.\/source-links\.mjs'/)
 })
 
-test('the repository defines a dependency-free GitHub Pages build and deploy workflow', async () => {
-  const [packageJson, buildScript, workflow] = await Promise.all([
+test('the repository defines a dependency-free static build and deploy setup', async () => {
+  const [packageJson, buildScript, wranglerConfig] = await Promise.all([
     read('../package.json'),
     read('../scripts/build-pages.mjs'),
-    read('../.github/workflows/pages.yml'),
+    read('../wrangler.jsonc'),
   ])
 
   assert.match(packageJson, /"build:pages": "node scripts\/build-pages\.mjs"/)
+  assert.match(packageJson, /"deploy": "wrangler deploy"/)
   assert.match(buildScript, /copyFile\(catalogPath, join\(outputPath, 'catalog\.json'\)\)/)
-  assert.match(workflow, /actions\/deploy-pages@v5/)
-  assert.match(workflow, /npm run build:pages/)
+  assert.match(wranglerConfig, /"pattern": "opengpudb\.com", "custom_domain": true/)
+  assert.match(wranglerConfig, /"directory": "\.\/\.pages"/)
 })

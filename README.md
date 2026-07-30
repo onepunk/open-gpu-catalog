@@ -4,7 +4,7 @@ A public, reproducible GPU catalog with stable identifiers, source provenance,
 vendor-verified corrections, browser-detection aliases, and generated artifacts
 for applications that need reliable GPU memory data.
 
-[Browse and search the database](https://onepunk.github.io/open-gpu-db/)
+[Browse and search the database](https://opengpudb.com)
 or use the versioned JSON artifacts directly.
 
 ## Why this exists
@@ -77,8 +77,10 @@ npm run audit:sources
 ```
 
 `npm run build` regenerates both committed artifacts. `npm run check` fails when
-the committed artifacts differ from their deterministic build. The Pages build
-copies the dependency-free search interface and complete catalog into `.pages/`.
+the committed artifacts differ from their deterministic build. `npm run build:pages`
+copies the dependency-free search interface and complete catalog into `.pages/`,
+which deploys to [opengpudb.com](https://opengpudb.com) via `npm run deploy`
+(Cloudflare Workers static assets).
 The source audit reports which records have first-party vendor documentation,
 which currently rely on a specific third-party specification page, and which
 need source enrichment. Use `npm run audit:sources -- --json` for record IDs.

@@ -8,10 +8,14 @@
     "build": "node scripts/build.mjs",
     "build:pages": "node scripts/build-pages.mjs",
     "check": "node scripts/build.mjs --check",
+    "deploy": "wrangler deploy",
     "test": "node --test"
   },
   "engines": {
     "node": ">=20"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "wrangler": "^4.115.0"
+  }
 }

@@ -1,0 +1,20 @@
+{
+  // Open GPU DB explorer — static assets only, no Worker script.
+  // Served at opengpudb.com. Deploy: `npm run build:pages && npm run deploy`.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "open-gpu-db",
+  "compatibility_date": "2026-07-30",
+  "observability": {
+    "enabled": true
+  },
+  // Custom domains — wrangler creates the proxied DNS records + edge cert.
+  "routes": [
+    { "pattern": "opengpudb.com", "custom_domain": true },
+    { "pattern": "www.opengpudb.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./.pages",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "single-page-application"
+  }
+}
