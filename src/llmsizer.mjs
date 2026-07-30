@@ -1,4 +1,10 @@
 const LLMSIZER_VENDORS = new Set(['apple', 'nvidia', 'amd', 'intel'])
+const VENDOR_ORDER = new Map([
+  ['nvidia', 0],
+  ['amd', 1],
+  ['intel', 2],
+  ['apple', 3],
+])
 
 export function buildLlmsizerArtifact(catalog) {
   const gpus = catalog.gpus
@@ -21,6 +27,15 @@ export function buildLlmsizerArtifact(catalog) {
       ...(gpu.memory.unified ? { unified: true } : {}),
       ...(gpu.interconnects.includes('nvlink') ? { nvlink: true } : {}),
     }))
+    .sort((left, right) => {
+      const vendorOrder =
+        (VENDOR_ORDER.get(left.vendor) ?? 99) - (VENDOR_ORDER.get(right.vendor) ?? 99)
+      return (
+        vendorOrder ||
+        right.bandwidth_gbps - left.bandwidth_gbps ||
+        left.name.localeCompare(right.name)
+      )
+    })
 
   return {
     schema_version: '1.0.0',

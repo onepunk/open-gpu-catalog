@@ -80,20 +80,20 @@ test('llmsizer artifact includes usable discrete and unified GPUs only', async (
     source_repository: 'https://github.com/onepunk/open-gpu-catalog',
     gpus: [
       {
-        name: 'Apple M5',
-        aliases: ['Apple M5 GPU'],
-        vendor: 'apple',
-        vram_gb: null,
-        bandwidth_gbps: 153,
-        unified: true,
-      },
-      {
         name: 'B200',
         aliases: [],
         vendor: 'nvidia',
         vram_gb: 180,
         bandwidth_gbps: 8000,
         nvlink: true,
+      },
+      {
+        name: 'Apple M5',
+        aliases: ['Apple M5 GPU'],
+        vendor: 'apple',
+        vram_gb: null,
+        bandwidth_gbps: 153,
+        unified: true,
       },
     ],
     integrated_gpu_patterns: ['Intel Iris'],
