@@ -96,13 +96,10 @@ function provenanceLinks(gpu) {
 
 function createDetails(gpu) {
   const details = createElement('details', { className: 'record-details' })
-  details.append(createElement('summary', { text: 'Aliases & sources' }))
+  details.append(createElement('summary', { text: 'Sources' }))
 
   const block = createElement('div', { className: 'detail-block' })
-  const aliases = createElement('p', {
-    text: gpu.aliases?.length ? `Aliases: ${gpu.aliases.join(', ')}` : 'Aliases: none recorded',
-  })
-  block.append(aliases, provenanceLinks(gpu))
+  block.append(provenanceLinks(gpu))
   details.append(block)
   return details
 }
@@ -148,9 +145,6 @@ function createRow(gpu) {
       ? gpu.generation
       : '',
   )
-  const status = document.createElement('td')
-  status.append(createStatus(gpu.status))
-
   row.append(
     createNameCell(gpu),
     vendor,
@@ -158,7 +152,6 @@ function createRow(gpu) {
     createSpecCell(memoryDescription(gpu), gpu.memory.type),
     bandwidth,
     architecture,
-    status,
   )
   return row
 }
