@@ -1,15 +1,15 @@
 /* Open GPU DB — workstation layout. Theme variables are set by themes.mjs;
-   the defaults below are the Tokyo Night palette so the page renders
+   the defaults below are the Vesper palette so the page renders
    correctly before scripts run (and without JavaScript). */
 :root {
-  --bg: #1a1b26;
-  --panel: #16161e;
-  --raised: #1f2335;
-  --line: #292e42;
-  --ink: #c0caf5;
-  --muted: #787c99;
-  --faint: #565f89;
-  --accent: #7aa2f7;
+  --bg: #101010;
+  --panel: #161616;
+  --raised: #1c1c1c;
+  --line: #282828;
+  --ink: #ffffff;
+  --muted: #a0a0a0;
+  --faint: #6b6b6b;
+  --accent: #ffc799;
 
   --vendor-nvidia: #76b900;
   --vendor-amd: #e5443d;

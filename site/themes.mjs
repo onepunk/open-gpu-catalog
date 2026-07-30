@@ -26,8 +26,7 @@ const STORAGE_KEY = 'open-gpu-db-theme'
 const STORAGE_VARS_KEY = 'open-gpu-db-theme-vars'
 
 export function defaultThemeId() {
-  const prefersLight = window.matchMedia?.('(prefers-color-scheme: light)').matches
-  return prefersLight ? 'one-light' : 'tokyo-night'
+  return 'vesper'
 }
 
 export function storedThemeId() {
