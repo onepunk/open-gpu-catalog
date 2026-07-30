@@ -93,24 +93,10 @@ button {
   flex: none;
 }
 
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand { text-decoration: none; flex: none; }
 
-.brand-mark {
-  display: grid;
-  grid-template-columns: 7px 7px;
-  gap: 2px;
-  flex: none;
-}
-
-.brand-mark i { width: 7px; height: 7px; border-radius: 1.5px; }
-.brand-mark i:nth-child(1) { background: var(--vendor-nvidia); }
-.brand-mark i:nth-child(2) { background: var(--vendor-amd); }
-.brand-mark i:nth-child(3) { background: var(--vendor-intel); }
-.brand-mark i:nth-child(4) { background: var(--faint); }
-
-.brand-text { display: flex; flex-direction: column; line-height: 1.2; }
-.brand-text strong { font: 600 12px var(--mono); letter-spacing: .13em; }
-.brand-text small { font-size: 10.5px; color: var(--faint); }
+.wordmark { font: 600 13px/1 var(--mono); letter-spacing: .14em; white-space: nowrap; }
+.wordmark b { color: var(--accent); font-weight: 600; }
 
 .search-wrap { flex: 1; max-width: 560px; position: relative; }
 
@@ -614,7 +600,6 @@ body.record-open .record { display: block; }
   .facet-toggle { display: block; }
 
   .top-bar { gap: 12px; }
-  .brand-text small { display: none; }
   .catalog-count { display: none; }
 
   .row { grid-template-columns: 1fr 80px; }
