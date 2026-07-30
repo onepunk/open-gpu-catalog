@@ -23,8 +23,6 @@ const elements = {
   cards: document.querySelector('#result-cards'),
   showMore: document.querySelector('#show-more'),
   gpuCount: document.querySelector('#gpu-count'),
-  sourceCount: document.querySelector('#source-count'),
-  catalogVersion: document.querySelector('#catalog-version'),
 }
 
 let catalog = null
@@ -327,8 +325,6 @@ async function loadCatalog() {
     bindEvents()
 
     elements.gpuCount.textContent = catalog.gpus.length.toLocaleString()
-    elements.sourceCount.textContent = catalog.sources.length.toLocaleString()
-    elements.catalogVersion.textContent = `v${catalog.catalog_version}`
     elements.loading.hidden = true
     render()
   } catch (error) {

@@ -26,6 +26,8 @@ test('catalog page exposes an accessible searchable data explorer shell', async 
   assert.match(html, /Searchable GPU database/)
   assert.match(html, /Search the GPU catalog\./)
   assert.match(html, /Search the database for graphics processors, accelerators, and/)
+  assert.match(html, /id="gpu-count"/)
+  assert.doesNotMatch(html, /id="source-count"|id="catalog-version"/)
   assert.doesNotMatch(html, /Find the GPU behind the numbers|Open data · Vendor-verified/)
   assert.match(css, /@media \(max-width: 760px\)/)
   assert.match(css, /:focus-visible/)

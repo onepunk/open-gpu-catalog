@@ -775,19 +775,15 @@ footer {
 
   .catalog-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .catalog-stats > div {
-    display: block;
+    display: flex;
     padding: 16px 12px;
-    border-right: 1px solid var(--line);
-    border-bottom: 0;
-    text-align: center;
-  }
-
-  .catalog-stats > div:last-child {
     border-right: 0;
+    border-bottom: 0;
+    text-align: left;
   }
 
   .catalog-stats dt {
