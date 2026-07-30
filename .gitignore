@@ -2,3 +2,4 @@
 .pages/
 .claude-octopus/
 node_modules/
+.playwright-mcp/
