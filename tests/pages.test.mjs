@@ -37,6 +37,6 @@ test('the repository defines a dependency-free GitHub Pages build and deploy wor
 
   assert.match(packageJson, /"build:pages": "node scripts\/build-pages\.mjs"/)
   assert.match(buildScript, /copyFile\(catalogPath, join\(outputPath, 'catalog\.json'\)\)/)
-  assert.match(workflow, /actions\/deploy-pages@v4/)
+  assert.match(workflow, /actions\/deploy-pages@v5/)
   assert.match(workflow, /npm run build:pages/)
 })
