@@ -1,10 +1,12 @@
 # Changelog
 
-## Unreleased
+## 1.2.0 — 2026-07-30
 
+- Rename the project and repository to Open GPU DB.
 - Display direct source destinations instead of import-layer names.
 - Prioritize first-party vendor documentation ahead of third-party references.
 - Add a deterministic source-link coverage audit for future enrichment.
+- Simplify the public search page copy and summary.
 
 ## 1.1.0 — 2026-07-30
 

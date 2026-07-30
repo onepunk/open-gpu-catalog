@@ -1,4 +1,4 @@
-name: Validate catalog
+name: Validate GPU database
 
 on:
   push:

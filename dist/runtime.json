@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "catalog_version": "1.1.0",
-  "source_repository": "https://github.com/onepunk/open-gpu-catalog",
+  "catalog_version": "1.2.0",
+  "source_repository": "https://github.com/onepunk/open-gpu-db",
   "gpus": [
     {
       "name": "NVIDIA Vera Rubin GPU",

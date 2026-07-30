@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/onepunk/open-gpu-catalog/schema/catalog.schema.json",
-  "title": "Open GPU Catalog",
+  "$id": "https://github.com/onepunk/open-gpu-db/schema/catalog.schema.json",
+  "title": "Open GPU DB",
   "type": "object",
   "required": ["schema_version", "catalog_version", "sources", "gpus", "integrated_gpu_patterns"],
   "properties": {

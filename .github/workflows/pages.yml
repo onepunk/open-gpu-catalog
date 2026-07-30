@@ -1,4 +1,4 @@
-name: Deploy catalog explorer
+name: Deploy GPU database explorer
 
 on:
   push:

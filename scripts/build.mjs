@@ -33,7 +33,7 @@ const [
 ])
 
 const catalog = buildCatalog({
-  catalogVersion: '1.1.0',
+  catalogVersion: '1.2.0',
   rightnow,
   additions,
   overrides,

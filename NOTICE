@@ -1,4 +1,4 @@
-Open GPU Catalog
+Open GPU DB
 Copyright 2026 onepunk
 
 This product includes data from the RightNow GPU Database:
@@ -9,6 +9,6 @@ Its data is sourced from the TechPowerUp GPU Database via dbgpu, as documented
 by the RightNow project. The imported snapshot, its exact revision, checksum,
 and retrieval date are recorded in data/imports/rightnow/metadata.json.
 
-Open GPU Catalog adds normalization, stable identifiers, aliases, official
+Open GPU DB adds normalization, stable identifiers, aliases, official
 vendor corrections and additions, field-level provenance, validation, and
-consumer-specific generated artifacts. See README.md for the layering model.
+generated artifacts. See README.md for the layering model.

@@ -1,15 +1,15 @@
-# Open GPU Catalog
+# Open GPU DB
 
 A public, reproducible GPU catalog with stable identifiers, source provenance,
 vendor-verified corrections, browser-detection aliases, and generated artifacts
 for applications that need reliable GPU memory data.
 
-[Browse and search the catalog](https://onepunk.github.io/open-gpu-catalog/)
+[Browse and search the database](https://onepunk.github.io/open-gpu-db/)
 or use the versioned JSON artifacts directly.
 
 ## Why this exists
 
-No single public GPU database is both broad and authoritative. Open GPU Catalog
+No single public GPU database is both broad and authoritative. Open GPU DB
 uses a layered model:
 
 1. A pinned snapshot of the Apache-2.0
@@ -40,13 +40,13 @@ ID and TechPowerUp URL where available.
 Raw GitHub URL:
 
 ```text
-https://raw.githubusercontent.com/onepunk/open-gpu-catalog/main/dist/catalog.json
+https://raw.githubusercontent.com/onepunk/open-gpu-db/main/dist/catalog.json
 ```
 
 Runtime-oriented consumer URL:
 
 ```text
-https://raw.githubusercontent.com/onepunk/open-gpu-catalog/main/dist/runtime.json
+https://raw.githubusercontent.com/onepunk/open-gpu-db/main/dist/runtime.json
 ```
 
 ## Data model
@@ -98,6 +98,6 @@ precedence. Uncertain values should remain unknown rather than being guessed.
 
 ## Attribution and license
 
-Open GPU Catalog is licensed under Apache-2.0. It incorporates an attributed,
+Open GPU DB is licensed under Apache-2.0. It incorporates an attributed,
 pinned snapshot of the Apache-2.0 RightNow GPU Database. See [NOTICE](NOTICE),
 [LICENSE](LICENSE), and `data/imports/rightnow/metadata.json`.

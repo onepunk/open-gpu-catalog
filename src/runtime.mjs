@@ -40,7 +40,7 @@ export function buildRuntimeArtifact(catalog) {
   return {
     schema_version: '1.0.0',
     catalog_version: catalog.catalog_version,
-    source_repository: 'https://github.com/onepunk/open-gpu-catalog',
+    source_repository: 'https://github.com/onepunk/open-gpu-db',
     gpus,
     integrated_gpu_patterns: catalog.integrated_gpu_patterns,
   }

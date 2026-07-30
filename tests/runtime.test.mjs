@@ -77,7 +77,7 @@ test('runtime artifact includes usable discrete and unified GPUs only', async ()
   assert.deepEqual(artifact, {
     schema_version: '1.0.0',
     catalog_version: '1.0.0',
-    source_repository: 'https://github.com/onepunk/open-gpu-catalog',
+    source_repository: 'https://github.com/onepunk/open-gpu-db',
     gpus: [
       {
         name: 'B200',
