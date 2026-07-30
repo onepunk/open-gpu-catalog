@@ -7,166 +7,122 @@
       name="description"
       content="Search a source-linked database of GPU specifications."
     >
-    <meta name="theme-color" content="#f6f8fb">
+    <meta name="theme-color" content="#16161e">
     <title>Open GPU DB — Search GPU specifications</title>
     <link rel="stylesheet" href="./styles.css">
+    <script>
+      // Restore the persisted theme before first paint to avoid a flash.
+      try {
+        const saved = JSON.parse(localStorage.getItem('open-gpu-db-theme-vars'))
+        if (saved?.vars) {
+          for (const [name, value] of Object.entries(saved.vars)) {
+            document.documentElement.style.setProperty(`--${name}`, value)
+          }
+          document.documentElement.style.setProperty('color-scheme', saved.appearance)
+        }
+      } catch {}
+    </script>
     <script type="module" src="./app.mjs"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to catalog</a>
 
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href="./" aria-label="Open GPU DB home">
-          <span class="brand-mark" aria-hidden="true">
-            <i></i><i></i><i></i><i></i>
-          </span>
-          <span>
-            <strong>Open GPU DB</strong>
-            <small>Searchable GPU database</small>
-          </span>
-        </a>
+    <header class="top-bar">
+      <a class="brand" href="./" aria-label="Open GPU DB home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-text">
+          <strong>OPEN GPU DB</strong>
+          <small>Searchable GPU database</small>
+        </span>
+      </a>
 
-        <nav class="header-links" aria-label="Project links">
-          <a href="./catalog.json" download>Download JSON</a>
-          <a
-            class="button button-secondary"
-            href="https://github.com/onepunk/open-gpu-db"
-          >
-            View source
-            <span aria-hidden="true">↗</span>
-          </a>
-        </nav>
-      </div>
+      <form class="search-wrap" id="catalog-filters" role="search">
+        <label class="visually-hidden" for="catalog-search">Search the catalog</label>
+        <input
+          id="catalog-search"
+          name="q"
+          type="search"
+          autocomplete="off"
+          placeholder="Search GPUs — try “RTX 5090”, “MI455X”, or “Apple M5”"
+        >
+        <kbd aria-label="Keyboard shortcut slash">/</kbd>
+      </form>
+
+      <p class="catalog-count"><span id="gpu-count">—</span> records</p>
     </header>
 
-    <main id="main">
-      <section class="hero shell" aria-labelledby="page-title">
-        <div class="hero-copy">
-          <h1 id="page-title">Search the GPU database.</h1>
-          <p class="hero-intro">
-            Search the database for graphics processors, accelerators, and
-            unified-memory systems. Every correction and addition points back
-            to its source.
-          </p>
+    <main id="main" class="layout">
+      <h1 class="visually-hidden">Search the GPU database.</h1>
+      <p class="visually-hidden">
+        Search the database for graphics processors, accelerators, and
+        unified-memory systems. Every correction and addition points back
+        to its source.
+      </p>
+
+      <nav class="facets" id="facets" aria-label="Catalog filters">
+        <div class="facet-group">
+          <h2>Vendor</h2>
+          <div id="vendor-facets"></div>
         </div>
 
-        <dl class="catalog-stats" aria-label="Catalog summary">
-          <div>
-            <dt>GPUs</dt>
-            <dd id="gpu-count">—</dd>
-          </div>
-        </dl>
-      </section>
-
-      <section class="catalog-section shell" aria-labelledby="catalog-heading">
-        <div class="section-heading">
-          <div>
-            <p class="section-kicker">Explore the data</p>
-            <h2 id="catalog-heading">GPU specifications</h2>
-          </div>
-          <p>
-            Capacity values describe the published maximum configuration.
-            Unified memory is labelled separately from dedicated VRAM.
-          </p>
+        <div class="facet-group">
+          <h2>Type</h2>
+          <div id="type-facets"></div>
         </div>
 
-        <form class="filter-panel" id="catalog-filters">
-          <div class="search-field">
-            <label for="catalog-search">Search the catalog</label>
-            <div class="search-input-wrap">
-              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
-                <path
-                  d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"
-                />
-              </svg>
-              <input
-                id="catalog-search"
-                name="q"
-                type="search"
-                autocomplete="off"
-                placeholder="Try “RTX 5090”, “MI455X”, or “Apple M5”"
-              >
-              <kbd aria-label="Keyboard shortcut slash">/</kbd>
-            </div>
-          </div>
+        <div class="facet-group">
+          <h2>Memory</h2>
+          <div id="memory-facets"></div>
+        </div>
 
-          <div class="filter-grid">
-            <label>
-              <span>Vendor</span>
-              <select id="vendor-filter" name="vendor">
-                <option value="all">All vendors</option>
-              </select>
-            </label>
+        <div class="facet-group">
+          <h2><label for="capacity-filter">Minimum capacity</label></h2>
+          <select class="facet-select" id="capacity-filter" name="min">
+            <option value="0">Any capacity</option>
+            <option value="8">8 GB+</option>
+            <option value="16">16 GB+</option>
+            <option value="24">24 GB+</option>
+            <option value="48">48 GB+</option>
+            <option value="80">80 GB+</option>
+            <option value="128">128 GB+</option>
+            <option value="256">256 GB+</option>
+          </select>
+        </div>
 
-            <label>
-              <span>Device type</span>
-              <select id="type-filter" name="type">
-                <option value="all">All types</option>
-                <option value="accelerator">Accelerator</option>
-                <option value="discrete">Discrete</option>
-                <option value="integrated">Integrated</option>
-                <option value="soc">System on chip</option>
-              </select>
-            </label>
+        <div class="facet-group">
+          <h2><label for="status-filter">Status</label></h2>
+          <select class="facet-select" id="status-filter" name="status">
+            <option value="all">Any status</option>
+            <option value="active">Active</option>
+            <option value="announced">Announced</option>
+            <option value="discontinued">Discontinued</option>
+            <option value="unknown">Unknown</option>
+          </select>
+        </div>
 
-            <label>
-              <span>Memory</span>
-              <select id="memory-filter" name="memory">
-                <option value="all">Any memory</option>
-                <option value="dedicated">Dedicated</option>
-                <option value="unified">Unified</option>
-              </select>
-            </label>
+        <div class="facet-group">
+          <h2><label for="sort-filter">Sort</label></h2>
+          <select class="facet-select" id="sort-filter" name="sort">
+            <option value="newest">Newest first</option>
+            <option value="name-asc">Name A–Z</option>
+            <option value="memory-desc">Memory, highest</option>
+            <option value="bandwidth-desc">Bandwidth, highest</option>
+          </select>
+        </div>
 
-            <label>
-              <span>Minimum capacity</span>
-              <select id="capacity-filter" name="min">
-                <option value="0">Any capacity</option>
-                <option value="8">8 GB+</option>
-                <option value="16">16 GB+</option>
-                <option value="24">24 GB+</option>
-                <option value="48">48 GB+</option>
-                <option value="80">80 GB+</option>
-                <option value="128">128 GB+</option>
-                <option value="256">256 GB+</option>
-              </select>
-            </label>
+        <button class="clear-filters" id="clear-filters" type="button">
+          Clear filters
+        </button>
+      </nav>
 
-            <label>
-              <span>Status</span>
-              <select id="status-filter" name="status">
-                <option value="all">Any status</option>
-                <option value="active">Active</option>
-                <option value="announced">Announced</option>
-                <option value="discontinued">Discontinued</option>
-                <option value="unknown">Unknown</option>
-              </select>
-            </label>
+      <section class="list" aria-labelledby="catalog-heading">
+        <h2 class="visually-hidden" id="catalog-heading">GPU specifications</h2>
 
-            <label>
-              <span>Sort by</span>
-              <select id="sort-filter" name="sort">
-                <option value="name-asc">Name A–Z</option>
-                <option value="memory-desc">Memory, highest</option>
-                <option value="bandwidth-desc">Bandwidth, highest</option>
-                <option value="newest">Newest first</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="filter-actions">
-            <p id="active-filter-summary">Showing the complete catalog</p>
-            <button class="button button-quiet" id="clear-filters" type="reset">
-              Clear filters
-            </button>
-          </div>
-        </form>
-
-        <div class="results-toolbar">
-          <p id="result-status" role="status" aria-live="polite">
-            Loading catalog…
-          </p>
+        <div class="list-toolbar">
+          <p id="result-status" role="status" aria-live="polite">Loading catalog…</p>
+          <button class="facet-toggle" id="facet-toggle" type="button" aria-expanded="false">
+            Filters
+          </button>
         </div>
 
         <div id="loading-state" class="state-panel">
@@ -194,53 +150,40 @@
         </div>
 
         <div id="results" hidden>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">GPU</th>
-                  <th scope="col">Vendor</th>
-                  <th scope="col">Type</th>
-                  <th scope="col">Memory</th>
-                  <th scope="col">Bandwidth</th>
-                  <th scope="col">Architecture</th>
-                </tr>
-              </thead>
-              <tbody id="result-rows"></tbody>
-            </table>
+          <div class="list-head" aria-hidden="true">
+            <span>GPU</span>
+            <span>Memory</span>
+            <span>Bandwidth</span>
           </div>
-
-          <div class="result-cards" id="result-cards"></div>
-
-          <div class="show-more-wrap">
-            <button class="button button-secondary" id="show-more" type="button" hidden>
-              Show 50 more
-            </button>
-          </div>
+          <div id="result-rows"></div>
+          <button class="show-more" id="show-more" type="button" hidden>
+            Show 100 more
+          </button>
         </div>
       </section>
+
+      <aside class="record" id="record" aria-label="Selected GPU record"></aside>
     </main>
 
-    <footer>
-      <div class="shell footer-inner">
-        <p>Open GPU DB · Apache-2.0</p>
-        <nav aria-label="Catalog resources">
-          <a href="./catalog.json" download>Catalog JSON</a>
-          <a href="https://github.com/onepunk/open-gpu-db/blob/main/schema/catalog.schema.json">
-            JSON Schema
-          </a>
-          <a href="https://github.com/onepunk/open-gpu-db/blob/main/NOTICE">
-            Attribution
-          </a>
-        </nav>
-      </div>
+    <footer class="foot-bar">
+      <p>Open GPU DB · Apache-2.0</p>
+      <nav aria-label="Catalog resources">
+        <a href="./catalog.json" download>Catalog JSON</a>
+        <a href="https://github.com/onepunk/open-gpu-db/blob/main/schema/catalog.schema.json">JSON Schema</a>
+        <a href="https://github.com/onepunk/open-gpu-db/blob/main/NOTICE">Attribution</a>
+        <a href="https://github.com/onepunk/open-gpu-db">Source</a>
+      </nav>
+      <button class="theme-button" id="theme-button" type="button">
+        <span aria-hidden="true">◐</span> themes
+      </button>
     </footer>
 
-    <noscript>
-      <div class="noscript">
-        JavaScript is required for interactive search. You can still
-        <a href="./catalog.json" download>download the catalog JSON</a>.
+    <dialog id="theme-picker" aria-label="Theme picker">
+      <div class="picker-head">
+        <strong>Theme</strong>
+        <span class="picker-hint" aria-hidden="true">↑↓ select · ↵ apply · esc close</span>
       </div>
-    </noscript>
+      <div id="theme-list" role="listbox" aria-label="Available themes" tabindex="0"></div>
+    </dialog>
   </body>
 </html>

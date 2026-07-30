@@ -36,6 +36,22 @@ test('catalog page exposes an accessible searchable data explorer shell', async 
   assert.match(app, /import \{ buildSourceLinks \} from '\.\/source-links\.mjs'/)
 })
 
+test('the explorer ships the themed workstation shell', async () => {
+  const [html, app, themes] = await Promise.all([
+    read('../site/index.html'),
+    read('../site/app.mjs'),
+    read('../site/themes.mjs'),
+  ])
+
+  assert.match(html, /<dialog id="theme-picker"/)
+  assert.match(html, /id="record"/)
+  assert.match(app, /from '\.\/themes\.mjs'/)
+  assert.match(themes, /export const THEMES = \[/)
+  // Dark and light appearances must both be represented.
+  assert.match(themes, /appearance: 'dark'/)
+  assert.match(themes, /appearance: 'light'/)
+})
+
 test('the repository defines a dependency-free static build and deploy setup', async () => {
   const [packageJson, buildScript, wranglerConfig] = await Promise.all([
     read('../package.json'),
