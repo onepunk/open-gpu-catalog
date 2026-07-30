@@ -2,6 +2,7 @@
 // properties; vendor identity colors are fixed and defined in styles.css.
 export const THEMES = [
   // Dark
+  { id: 'open-gpu', name: 'Open GPU', appearance: 'dark', vars: { bg: '#101318', panel: '#161a21', raised: '#1c212a', line: '#262c37', ink: '#e8eaf0', muted: '#8a93a5', faint: '#5b6372', accent: '#d9a441' } },
   { id: 'tokyo-night', name: 'Tokyo Night', appearance: 'dark', vars: { bg: '#1a1b26', panel: '#16161e', raised: '#1f2335', line: '#292e42', ink: '#c0caf5', muted: '#787c99', faint: '#565f89', accent: '#7aa2f7' } },
   { id: 'catppuccin', name: 'Catppuccin', appearance: 'dark', vars: { bg: '#1e1e2e', panel: '#181825', raised: '#24243a', line: '#313244', ink: '#cdd6f4', muted: '#a6adc8', faint: '#6c7086', accent: '#cba6f7' } },
   { id: 'dracula', name: 'Dracula', appearance: 'dark', vars: { bg: '#282a36', panel: '#21222c', raised: '#2f313f', line: '#44475a', ink: '#f8f8f2', muted: '#8f98b3', faint: '#6272a4', accent: '#bd93f9' } },
@@ -26,7 +27,7 @@ const STORAGE_KEY = 'open-gpu-db-theme'
 const STORAGE_VARS_KEY = 'open-gpu-db-theme-vars'
 
 export function defaultThemeId() {
-  return 'vesper'
+  return 'open-gpu'
 }
 
 export function storedThemeId() {
