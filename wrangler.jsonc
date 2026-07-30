@@ -1,6 +1,7 @@
 {
   // Open GPU DB explorer — static assets only, no Worker script.
-  // Served at opengpudb.com. Deploy: `npm run build:pages && npm run deploy`.
+  // Served at opengpudb.com. Pushing to main auto-deploys via Workers Builds;
+  // `npm run build:pages && npm run deploy` remains for manual deploys.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "open-gpu-db",
   "compatibility_date": "2026-07-30",
