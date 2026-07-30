@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.0 — 2026-07-30
+
+- Re-source the imported dataset directly to the MIT-licensed dbgpu project,
+  removing the intermediary snapshot; identifiers and values are unchanged.
+- Enrich catalog records with extended specifications: silicon (chip, process,
+  transistors, die size, foundry), clocks, compute units, throughput, TDP,
+  bus interface, and graphics API support.
+- Show the extended specifications on each record in the site explorer.
+
 ## 1.2.0 — 2026-07-30
 
 - Rename the project and repository to Open GPU DB.
@@ -16,7 +25,7 @@
 
 ## 1.0.0 — 2026-07-30
 
-- Import and attribute 2,824 RightNow GPU records.
+- Import and attribute 2,824 TechPowerUp-derived GPU records.
 - Add a normalized schema with stable identifiers and field-level provenance.
 - Add vendor-verified B200 and B300 corrections.
 - Add Apple M1 through M5-family unified-memory records.

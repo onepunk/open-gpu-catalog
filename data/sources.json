@@ -1,13 +1,13 @@
 [
   {
-    "id": "rightnow-gpu-database",
-    "name": "RightNow GPU Database",
+    "id": "dbgpu",
+    "name": "dbgpu TechPowerUp dataset",
     "kind": "community",
-    "url": "https://github.com/RightNow-AI/RightNow-GPU-Database",
-    "license": "Apache-2.0",
+    "url": "https://github.com/painebenjamin/dbgpu",
+    "license": "MIT",
     "retrieved_at": "2026-07-30",
-    "revision": "dfb3c9a54b092ad78681abb5a044e146398092a2",
-    "notes": "Broad NVIDIA, AMD, and Intel coverage derived from TechPowerUp via dbgpu."
+    "revision": "2025.12",
+    "notes": "Broad NVIDIA, AMD, and Intel coverage; the dbgpu project derives its bundled dataset from the TechPowerUp GPU database."
   },
   {
     "id": "nvidia-hgx-b-series",

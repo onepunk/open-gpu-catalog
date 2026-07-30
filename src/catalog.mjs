@@ -1,35 +1,109 @@
-function normalizeRightNowGpu(gpu) {
+const DBGPU_VENDORS = {
+  NVIDIA: 'nvidia',
+  AMD: 'amd',
+  ATI: 'amd',
+  Intel: 'intel',
+  '3dfx': '3dfx',
+  Matrox: 'matrox',
+  XGI: 'xgi',
+  Sony: 'sony',
+}
+
+function dbgpuId(gpu) {
+  const vendor = DBGPU_VENDORS[gpu.manufacturer]
+  if (!vendor) throw new Error(`unknown dbgpu manufacturer: ${gpu.manufacturer}`)
+  const slug = gpu.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+  return `${vendor}-${slug}`
+}
+
+function compactObject(entries) {
+  const result = {}
+  for (const [key, value] of entries) {
+    if (value !== null && value !== undefined && value !== '') result[key] = value
+  }
+  return result
+}
+
+function apiVersion(major, minor) {
+  if (major === null || major === undefined) return null
+  return minor === null || minor === undefined ? String(major) : `${major}.${minor}`
+}
+
+function gflopsToTflops(value) {
+  if (value === null || value === undefined) return null
+  return Math.round(value) / 1000
+}
+
+function normalizeDbgpuSpecs(gpu) {
+  const apis = compactObject([
+    ['cuda', apiVersion(gpu.cuda_major_version, gpu.cuda_minor_version)],
+    ['directx', apiVersion(gpu.directx_major_version, gpu.directx_minor_version)],
+    ['opengl', apiVersion(gpu.opengl_major_version, gpu.opengl_minor_version)],
+    ['vulkan', apiVersion(gpu.vulkan_major_version, gpu.vulkan_minor_version)],
+    ['opencl', apiVersion(gpu.opencl_major_version, gpu.opencl_minor_version)],
+    ['shader_model', apiVersion(gpu.shader_model_major_version, gpu.shader_model_minor_version)],
+  ])
+  const specs = compactObject([
+    ['chip', gpu.gpu_name],
+    ['foundry', gpu.foundry],
+    ['process_nm', gpu.process_size_nm],
+    ['transistors_b', gpu.transistor_count_m == null ? null : gpu.transistor_count_m / 1000],
+    ['die_size_mm2', gpu.die_size_mm2],
+    ['base_clock_mhz', gpu.base_clock_mhz],
+    ['boost_clock_mhz', gpu.boost_clock_mhz],
+    ['memory_clock_mhz', gpu.memory_clock_mhz],
+    ['memory_bus_bits', gpu.memory_bus_bits],
+    ['shading_units', gpu.shading_units],
+    ['tensor_cores', gpu.tensor_cores],
+    ['rt_cores', gpu.ray_tracing_cores],
+    ['fp16_tflops', gflopsToTflops(gpu.half_float_performance_gflop_s)],
+    ['fp32_tflops', gflopsToTflops(gpu.single_float_performance_gflop_s)],
+    ['fp64_tflops', gflopsToTflops(gpu.double_float_performance_gflop_s)],
+    ['tdp_w', gpu.thermal_design_power_w],
+    ['bus_interface', gpu.bus_interface],
+  ])
+  if (Object.keys(apis).length) specs.apis = apis
+  return Object.keys(specs).length ? specs : null
+}
+
+function normalizeDbgpuGpu(gpu) {
   const deviceType =
-    gpu.slot === 'IGP' || gpu.memoryType === 'System Shared' ? 'integrated' : 'discrete'
+    gpu.board_slot_width === 'IGP' || gpu.memory_type === 'System Shared'
+      ? 'integrated'
+      : 'discrete'
+  const capacity = gpu.memory_size_gb || null
+  const specs = normalizeDbgpuSpecs(gpu)
   const fields = ['name', 'vendor', 'device_type']
   if (gpu.architecture) fields.push('architecture')
   if (gpu.generation) fields.push('generation')
-  if (gpu.releaseDate) fields.push('release_date')
-  if (gpu.memorySize != null) fields.push('memory.capacity_gb')
-  if (gpu.memoryType) fields.push('memory.type')
-  if (gpu.memoryBandwidth != null) fields.push('memory.bandwidth_gbps')
+  if (gpu.release_date) fields.push('release_date')
+  if (capacity != null) fields.push('memory.capacity_gb')
+  if (gpu.memory_type) fields.push('memory.type')
+  if (gpu.memory_bandwidth_gb_s != null) fields.push('memory.bandwidth_gbps')
+  if (specs) fields.push('specs')
 
   return {
-    id: gpu.id,
+    id: dbgpuId(gpu),
     name: gpu.name,
-    vendor: gpu.vendor,
+    vendor: DBGPU_VENDORS[gpu.manufacturer],
     device_type: deviceType,
     ...(gpu.architecture ? { architecture: gpu.architecture } : {}),
     ...(gpu.generation ? { generation: gpu.generation } : {}),
-    ...(gpu.releaseDate ? { release_date: gpu.releaseDate } : {}),
+    ...(gpu.release_date ? { release_date: gpu.release_date } : {}),
     memory: {
-      capacity_gb: gpu.memorySize ?? null,
-      ...(gpu.memoryType ? { type: gpu.memoryType } : {}),
-      bandwidth_gbps: gpu.memoryBandwidth ?? 0,
+      capacity_gb: capacity,
+      ...(gpu.memory_type ? { type: gpu.memory_type } : {}),
+      bandwidth_gbps: gpu.memory_bandwidth_gb_s ?? 0,
       unified: false,
     },
+    ...(specs ? { specs } : {}),
     aliases: [],
     interconnects: [],
     status: 'unknown',
     provenance: [{
-      source_id: 'rightnow-gpu-database',
-      source_record_id: gpu.id,
-      ...(gpu.url ? { source_url: gpu.url } : {}),
+      source_id: 'dbgpu',
+      ...(gpu.tpu_id ? { source_record_id: gpu.tpu_id } : {}),
+      ...(gpu.tpu_url ? { source_url: gpu.tpu_url } : {}),
       fields,
     }],
   }
@@ -45,7 +119,7 @@ function mergeChanges(gpu, changes) {
 
 export function buildCatalog({
   catalogVersion,
-  rightnow,
+  dbgpu,
   additions,
   overrides,
   aliases,
@@ -54,7 +128,7 @@ export function buildCatalog({
   integratedGpuPatterns,
 }) {
   const importedGpus = [
-    ...rightnow.map(normalizeRightNowGpu),
+    ...dbgpu.map(normalizeDbgpuGpu),
     ...additions,
   ]
   const byId = new Map()

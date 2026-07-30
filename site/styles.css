@@ -439,6 +439,24 @@ body.record-open .record { display: block; }
   margin: 24px 0 10px;
 }
 
+.kv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 22px;
+}
+
+.kv {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+}
+
+.kv dt { font: 400 11.5px var(--ui); color: var(--muted); white-space: nowrap; }
+.kv dd { font: 500 12px var(--mono); text-align: right; }
+
 .siblings { display: flex; flex-wrap: wrap; gap: 7px; }
 
 .sibling {

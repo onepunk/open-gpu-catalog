@@ -3,96 +3,340 @@
   "$id": "https://github.com/onepunk/open-gpu-db/schema/catalog.schema.json",
   "title": "Open GPU DB",
   "type": "object",
-  "required": ["schema_version", "catalog_version", "sources", "gpus", "integrated_gpu_patterns"],
+  "required": [
+    "schema_version",
+    "catalog_version",
+    "sources",
+    "gpus",
+    "integrated_gpu_patterns"
+  ],
   "properties": {
-    "schema_version": {"type": "string"},
-    "catalog_version": {"type": "string"},
+    "schema_version": {
+      "type": "string"
+    },
+    "catalog_version": {
+      "type": "string"
+    },
     "sources": {
       "type": "array",
-      "items": {"$ref": "#/$defs/source"}
+      "items": {
+        "$ref": "#/$defs/source"
+      }
     },
     "gpus": {
       "type": "array",
-      "items": {"$ref": "#/$defs/gpu"}
+      "items": {
+        "$ref": "#/$defs/gpu"
+      }
     },
     "integrated_gpu_patterns": {
       "type": "array",
-      "items": {"type": "string", "minLength": 1}
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
     }
   },
   "additionalProperties": false,
   "$defs": {
     "source": {
       "type": "object",
-      "required": ["id", "name", "kind", "url", "retrieved_at"],
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "url",
+        "retrieved_at"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
-        "name": {"type": "string", "minLength": 1},
-        "kind": {"enum": ["vendor", "community", "derived"]},
-        "url": {"type": "string", "format": "uri"},
-        "retrieved_at": {"type": "string", "format": "date"},
-        "license": {"type": "string"},
-        "revision": {"type": "string"},
-        "notes": {"type": "string"}
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "vendor",
+            "community",
+            "derived"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "license": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
       },
       "additionalProperties": false
     },
     "provenance": {
       "type": "object",
-      "required": ["source_id", "fields"],
+      "required": [
+        "source_id",
+        "fields"
+      ],
       "properties": {
-        "source_id": {"type": "string"},
-        "source_record_id": {"type": "string"},
-        "source_url": {"type": "string", "format": "uri"},
+        "source_id": {
+          "type": "string"
+        },
+        "source_record_id": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
         "fields": {
           "type": "array",
-          "items": {"type": "string"},
+          "items": {
+            "type": "string"
+          },
           "minItems": 1
         },
-        "method": {"enum": ["derived-rule"]}
+        "method": {
+          "enum": [
+            "derived-rule"
+          ]
+        }
       },
       "additionalProperties": false
     },
     "gpu": {
       "type": "object",
-      "required": ["id", "name", "vendor", "device_type", "memory", "aliases", "interconnects", "status", "provenance"],
+      "required": [
+        "id",
+        "name",
+        "vendor",
+        "device_type",
+        "memory",
+        "aliases",
+        "interconnects",
+        "status",
+        "provenance"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
-        "name": {"type": "string", "minLength": 1},
-        "vendor": {"type": "string", "minLength": 1},
-        "device_type": {"enum": ["discrete", "integrated", "accelerator", "soc"]},
-        "architecture": {"type": "string"},
-        "generation": {"type": "string"},
-        "release_date": {"type": "string", "format": "date"},
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "vendor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "device_type": {
+          "enum": [
+            "discrete",
+            "integrated",
+            "accelerator",
+            "soc"
+          ]
+        },
+        "architecture": {
+          "type": "string"
+        },
+        "generation": {
+          "type": "string"
+        },
+        "release_date": {
+          "type": "string",
+          "format": "date"
+        },
         "memory": {
           "type": "object",
-          "required": ["capacity_gb", "bandwidth_gbps", "unified"],
+          "required": [
+            "capacity_gb",
+            "bandwidth_gbps",
+            "unified"
+          ],
           "properties": {
-            "capacity_gb": {"type": ["number", "null"], "exclusiveMinimum": 0},
-            "type": {"type": "string"},
-            "bandwidth_gbps": {"type": ["number", "null"], "minimum": 0},
-            "unified": {"type": "boolean"}
+            "capacity_gb": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            },
+            "type": {
+              "type": "string"
+            },
+            "bandwidth_gbps": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "unified": {
+              "type": "boolean"
+            }
           },
           "additionalProperties": false
         },
         "aliases": {
           "type": "array",
-          "items": {"type": "string", "minLength": 1},
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
           "uniqueItems": true
         },
         "interconnects": {
           "type": "array",
-          "items": {"enum": ["nvlink", "ualink", "infinity-fabric", "xgmi", "pcie"]},
+          "items": {
+            "enum": [
+              "nvlink",
+              "ualink",
+              "infinity-fabric",
+              "xgmi",
+              "pcie"
+            ]
+          },
           "uniqueItems": true
         },
-        "status": {"enum": ["active", "announced", "discontinued", "unknown"]},
+        "status": {
+          "enum": [
+            "active",
+            "announced",
+            "discontinued",
+            "unknown"
+          ]
+        },
         "provenance": {
           "type": "array",
-          "items": {"$ref": "#/$defs/provenance"},
+          "items": {
+            "$ref": "#/$defs/provenance"
+          },
           "minItems": 1
+        },
+        "specs": {
+          "$ref": "#/$defs/specs"
         }
       },
       "additionalProperties": false
+    },
+    "specs": {
+      "type": "object",
+      "description": "Optional extended silicon, clock, compute, and interface specifications.",
+      "additionalProperties": false,
+      "properties": {
+        "chip": {
+          "type": "string",
+          "minLength": 1
+        },
+        "foundry": {
+          "type": "string",
+          "minLength": 1
+        },
+        "process_nm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "transistors_b": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "die_size_mm2": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "base_clock_mhz": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "boost_clock_mhz": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "memory_clock_mhz": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "memory_bus_bits": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "shading_units": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "tensor_cores": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "rt_cores": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "fp16_tflops": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "fp32_tflops": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "fp64_tflops": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "tdp_w": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "bus_interface": {
+          "type": "string",
+          "minLength": 1
+        },
+        "apis": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "cuda": {
+              "type": "string",
+              "minLength": 1
+            },
+            "directx": {
+              "type": "string",
+              "minLength": 1
+            },
+            "opengl": {
+              "type": "string",
+              "minLength": 1
+            },
+            "vulkan": {
+              "type": "string",
+              "minLength": 1
+            },
+            "opencl": {
+              "type": "string",
+              "minLength": 1
+            },
+            "shader_model": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
     }
   }
 }

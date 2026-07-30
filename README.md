@@ -12,9 +12,9 @@ or use the versioned JSON artifacts directly.
 No single public GPU database is both broad and authoritative. Open GPU DB
 uses a layered model:
 
-1. A pinned snapshot of the Apache-2.0
-   [RightNow GPU Database](https://github.com/RightNow-AI/RightNow-GPU-Database)
-   supplies broad NVIDIA, AMD, and Intel coverage.
+1. A pinned dataset from the MIT-licensed
+   [dbgpu](https://github.com/painebenjamin/dbgpu) project, derived from the
+   TechPowerUp GPU database, supplies broad NVIDIA, AMD, and Intel coverage.
 2. Official manufacturer documentation overrides imported values when the
    sources disagree.
 3. Missing products, including Apple Silicon and current AI accelerators, are
@@ -24,10 +24,10 @@ uses a layered model:
 5. The build validates identifiers, provenance, memory values, and name/alias
    uniqueness before publishing deterministic artifacts.
 
-The imported RightNow snapshot remains unmodified in
-`data/imports/rightnow/`. Its commit, checksum, license, and retrieval date are
-recorded in `metadata.json`. Each normalized record retains the original record
-ID and TechPowerUp URL where available.
+The imported dbgpu dataset remains unmodified in
+`data/imports/dbgpu/`. Its tool version, checksum, license, and retrieval date
+are recorded in `metadata.json`. Each normalized record retains the original
+TechPowerUp record ID and URL where available.
 
 ## Artifacts
 
@@ -103,5 +103,6 @@ precedence. Uncertain values should remain unknown rather than being guessed.
 ## Attribution and license
 
 Open GPU DB is licensed under Apache-2.0. It incorporates an attributed,
-pinned snapshot of the Apache-2.0 RightNow GPU Database. See [NOTICE](NOTICE),
-[LICENSE](LICENSE), and `data/imports/rightnow/metadata.json`.
+pinned dataset from the MIT-licensed dbgpu project, which derives its data
+from the TechPowerUp GPU database. See [NOTICE](NOTICE), [LICENSE](LICENSE),
+and `data/imports/dbgpu/metadata.json`.

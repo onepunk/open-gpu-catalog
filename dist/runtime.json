@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "catalog_version": "1.2.0",
+  "catalog_version": "1.3.0",
   "source_repository": "https://github.com/onepunk/open-gpu-db",
   "gpus": [
     {

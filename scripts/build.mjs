@@ -15,7 +15,7 @@ function serialize(value) {
 }
 
 const [
-  rightnow,
+  dbgpu,
   additions,
   overrides,
   aliases,
@@ -23,7 +23,7 @@ const [
   interconnectRules,
   integratedGpuPatterns,
 ] = await Promise.all([
-  readJson('data/imports/rightnow/all-gpus.json'),
+  readJson('data/imports/dbgpu/all-gpus.json'),
   readJson('data/layers/additions.json'),
   readJson('data/layers/overrides.json'),
   readJson('data/layers/aliases.json'),
@@ -33,8 +33,8 @@ const [
 ])
 
 const catalog = buildCatalog({
-  catalogVersion: '1.2.0',
-  rightnow,
+  catalogVersion: '1.3.0',
+  dbgpu,
   additions,
   overrides,
   aliases,

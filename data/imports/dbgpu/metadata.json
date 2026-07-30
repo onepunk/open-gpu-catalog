@@ -1,0 +1,10 @@
+{
+  "name": "dbgpu bundled TechPowerUp dataset",
+  "repository": "https://github.com/painebenjamin/dbgpu",
+  "tool_version": "2025.12",
+  "origin": "https://www.techpowerup.com/gpu-specs/",
+  "license": "MIT",
+  "retrieved_at": "2026-07-30",
+  "record_count": 2824,
+  "sha256": "1f96e08736f95054ca0660b16e51aa6163a1a5e8e1207a09f5e5618a3993932d"
+}

@@ -292,6 +292,65 @@ function specEntry(term, value, { soft = false, note = '' } = {}) {
   return wrap
 }
 
+function specSection(title, entries) {
+  const present = entries.filter(([, value]) => value !== null && value !== undefined)
+  if (!present.length) return []
+  const heading = createElement('h2', { className: 'record-section', text: title })
+  const grid = createElement('dl', { className: 'kv-grid' })
+  for (const [label, value] of present) {
+    const row = createElement('div', { className: 'kv' })
+    row.append(
+      createElement('dt', { text: label }),
+      createElement('dd', { text: String(value) }),
+    )
+    grid.append(row)
+  }
+  return [heading, grid]
+}
+
+function extendedSpecSections(gpu) {
+  const specs = gpu.specs ?? {}
+  const count = value => (value === null || value === undefined ? null : value.toLocaleString('en'))
+  const unit = (value, suffix) => (value === null || value === undefined ? null : `${value.toLocaleString('en')}${suffix}`)
+  const apis = specs.apis ?? {}
+
+  return [
+    ...specSection('Silicon', [
+      ['Chip', specs.chip],
+      ['Foundry', specs.foundry],
+      ['Process', unit(specs.process_nm, ' nm')],
+      ['Transistors', unit(specs.transistors_b, ' B')],
+      ['Die size', unit(specs.die_size_mm2, ' mm²')],
+    ]),
+    ...specSection('Clocks', [
+      ['Base clock', unit(specs.base_clock_mhz, ' MHz')],
+      ['Boost clock', unit(specs.boost_clock_mhz, ' MHz')],
+      ['Memory clock', unit(specs.memory_clock_mhz, ' MHz')],
+      ['Memory bus', unit(specs.memory_bus_bits, '-bit')],
+    ]),
+    ...specSection('Compute', [
+      ['Shading units', count(specs.shading_units)],
+      ['Tensor cores', count(specs.tensor_cores)],
+      ['RT cores', count(specs.rt_cores)],
+      ['FP16', unit(specs.fp16_tflops, ' TFLOPS')],
+      ['FP32', unit(specs.fp32_tflops, ' TFLOPS')],
+      ['FP64', unit(specs.fp64_tflops, ' TFLOPS')],
+    ]),
+    ...specSection('Board', [
+      ['TDP', unit(specs.tdp_w, ' W')],
+      ['Bus interface', specs.bus_interface],
+    ]),
+    ...specSection('API support', [
+      ['CUDA', apis.cuda],
+      ['DirectX', apis.directx],
+      ['OpenGL', apis.opengl],
+      ['Vulkan', apis.vulkan],
+      ['OpenCL', apis.opencl],
+      ['Shader model', apis.shader_model],
+    ]),
+  ]
+}
+
 function contextBar(label, percentile, color) {
   const row = createElement('div')
   const caption = createElement('div', { className: 'bar-label' })
@@ -372,6 +431,7 @@ function renderRecord() {
   )
 
   inner.append(close, spine, crumb, name, sub, specs, bars)
+  inner.append(...extendedSpecSections(gpu))
 
   const siblings = familySiblings(gpu)
   if (siblings.length) {
