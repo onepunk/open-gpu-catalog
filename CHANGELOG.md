@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Add 77 GPU records, including 25 dated 2026 releases and 52 historical
+  additions.
+- Correct the AMD Instinct MI455X and Intel Arc Pro B65/B70 release metadata
+  from current first-party documentation.
+- Add links for submitting a GPU or catalog update through GitHub Issues.
+
 ## 1.3.0 — 2026-07-30
 
 - Re-source the imported dataset directly to the MIT-licensed dbgpu project,
@@ -25,7 +33,7 @@
 
 ## 1.0.0 — 2026-07-30
 
-- Import and attribute 2,824 TechPowerUp-derived GPU records.
+- Import and attribute 2,824 DBGPU records.
 - Add a normalized schema with stable identifiers and field-level provenance.
 - Add vendor-verified B200 and B300 corrections.
 - Add Apple M1 through M5-family unified-memory records.

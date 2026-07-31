@@ -51,6 +51,25 @@
       "nvlink": true
     },
     {
+      "name": "NVIDIA H20",
+      "aliases": [
+        "H20"
+      ],
+      "vendor": "nvidia",
+      "vram_gb": 96,
+      "bandwidth_gbps": 4000
+    },
+    {
+      "name": "NVIDIA H20 NVL16",
+      "aliases": [
+        "H20 NVL16"
+      ],
+      "vendor": "nvidia",
+      "vram_gb": 96,
+      "bandwidth_gbps": 4000,
+      "nvlink": true
+    },
+    {
       "name": "H100 NVL 94 GB",
       "aliases": [],
       "vendor": "nvidia",
@@ -580,6 +599,15 @@
       "nvlink": true
     },
     {
+      "name": "NVIDIA RTX PRO 4500 Blackwell Server Edition",
+      "aliases": [
+        "RTX PRO 4500 Blackwell Server"
+      ],
+      "vendor": "nvidia",
+      "vram_gb": 32,
+      "bandwidth_gbps": 800
+    },
+    {
       "name": "RTX A5000",
       "aliases": [],
       "vendor": "nvidia",
@@ -878,6 +906,13 @@
       "bandwidth_gbps": 576
     },
     {
+      "name": "GeForce RTX 5070 Mobile 12 GB",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 12,
+      "bandwidth_gbps": 576
+    },
+    {
       "name": "RTX 5000 Ada Generation",
       "aliases": [],
       "vendor": "nvidia",
@@ -1139,6 +1174,13 @@
     },
     {
       "name": "GeForce RTX 5060",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 8,
+      "bandwidth_gbps": 448
+    },
+    {
+      "name": "GeForce RTX 5060 GB205",
       "aliases": [],
       "vendor": "nvidia",
       "vram_gb": 8,
@@ -1880,6 +1922,46 @@
       "vendor": "nvidia",
       "vram_gb": 128,
       "bandwidth_gbps": 273.2
+    },
+    {
+      "name": "NVIDIA N1 16SM",
+      "aliases": [
+        "N1 16SM"
+      ],
+      "vendor": "nvidia",
+      "vram_gb": null,
+      "bandwidth_gbps": 273,
+      "unified": true
+    },
+    {
+      "name": "NVIDIA N1 20SM",
+      "aliases": [
+        "N1 20SM"
+      ],
+      "vendor": "nvidia",
+      "vram_gb": null,
+      "bandwidth_gbps": 273,
+      "unified": true
+    },
+    {
+      "name": "NVIDIA N1X 40SM",
+      "aliases": [
+        "N1X 40SM"
+      ],
+      "vendor": "nvidia",
+      "vram_gb": null,
+      "bandwidth_gbps": 273,
+      "unified": true
+    },
+    {
+      "name": "NVIDIA N1X 48SM",
+      "aliases": [
+        "N1X 48SM"
+      ],
+      "vendor": "nvidia",
+      "vram_gb": null,
+      "bandwidth_gbps": 273,
+      "unified": true
     },
     {
       "name": "GeForce RTX 4060",
@@ -3513,6 +3595,13 @@
       "bandwidth_gbps": 102.4
     },
     {
+      "name": "Quadro FX 5800",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 4,
+      "bandwidth_gbps": 102.4
+    },
+    {
       "name": "Quadro K3100M",
       "aliases": [],
       "vendor": "nvidia",
@@ -3521,6 +3610,20 @@
     },
     {
       "name": "Quadro K4100M",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 4,
+      "bandwidth_gbps": 102.4
+    },
+    {
+      "name": "Quadro Plex 2200 D2",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 4,
+      "bandwidth_gbps": 102.4
+    },
+    {
+      "name": "Quadro Plex 2200 S4",
       "aliases": [],
       "vendor": "nvidia",
       "vram_gb": 4,
@@ -3542,6 +3645,27 @@
     },
     {
       "name": "Tesla C1080",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 4,
+      "bandwidth_gbps": 102.4
+    },
+    {
+      "name": "Tesla M1060",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 2,
+      "bandwidth_gbps": 102.4
+    },
+    {
+      "name": "Tesla S1070",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 4,
+      "bandwidth_gbps": 102.4
+    },
+    {
+      "name": "Tesla S1075",
       "aliases": [],
       "vendor": "nvidia",
       "vram_gb": 4,
@@ -4136,6 +4260,13 @@
       "bandwidth_gbps": 76.8
     },
     {
+      "name": "Quadro FX 4800 Mac Edition",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 1.5,
+      "bandwidth_gbps": 76.8
+    },
+    {
       "name": "Quadro FX 5600",
       "aliases": [],
       "vendor": "nvidia",
@@ -4144,6 +4275,20 @@
     },
     {
       "name": "Quadro FX 5600 Mac Edition",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 1.5,
+      "bandwidth_gbps": 76.8
+    },
+    {
+      "name": "Quadro Plex 1000 Model IV",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 1.5,
+      "bandwidth_gbps": 76.8
+    },
+    {
+      "name": "Quadro Plex 2100 S4",
       "aliases": [],
       "vendor": "nvidia",
       "vram_gb": 1.5,
@@ -4466,6 +4611,13 @@
     },
     {
       "name": "Quadro FX 4700 X2",
+      "aliases": [],
+      "vendor": "nvidia",
+      "vram_gb": 1,
+      "bandwidth_gbps": 51.2
+    },
+    {
+      "name": "Quadro Plex 2100 D4",
       "aliases": [],
       "vendor": "nvidia",
       "vram_gb": 1,
@@ -5854,6 +6006,15 @@
       "bandwidth_gbps": 6550
     },
     {
+      "name": "AMD Instinct MI350P",
+      "aliases": [
+        "Radeon Instinct MI350P"
+      ],
+      "vendor": "amd",
+      "vram_gb": 144,
+      "bandwidth_gbps": 4000
+    },
+    {
       "name": "Radeon Instinct MI250",
       "aliases": [],
       "vendor": "amd",
@@ -6505,6 +6666,13 @@
       "bandwidth_gbps": 322.3
     },
     {
+      "name": "Radeon RX 9060 XT LP",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 16,
+      "bandwidth_gbps": 322.3
+    },
+    {
       "name": "FirePro S9100",
       "aliases": [],
       "vendor": "amd",
@@ -6537,6 +6705,20 @@
       "aliases": [],
       "vendor": "amd",
       "vram_gb": 16,
+      "bandwidth_gbps": 320
+    },
+    {
+      "name": "Radeon R9 290",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 4,
+      "bandwidth_gbps": 320
+    },
+    {
+      "name": "Radeon R9 290X",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 4,
       "bandwidth_gbps": 320
     },
     {
@@ -6666,11 +6848,32 @@
       "bandwidth_gbps": 288
     },
     {
+      "name": "Radeon RX 9050 8 GB",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 8,
+      "bandwidth_gbps": 288
+    },
+    {
+      "name": "Steam Machine GPU",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 8,
+      "bandwidth_gbps": 288
+    },
+    {
       "name": "Radeon RX 6650 XT",
       "aliases": [],
       "vendor": "amd",
       "vram_gb": 8,
       "bandwidth_gbps": 280.3
+    },
+    {
+      "name": "Radeon R9 280X",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 3,
+      "bandwidth_gbps": 268.8
     },
     {
       "name": "FirePro S9000",
@@ -6712,6 +6915,13 @@
       "aliases": [],
       "vendor": "amd",
       "vram_gb": 3,
+      "bandwidth_gbps": 264
+    },
+    {
+      "name": "Radeon Sky 700",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 6,
       "bandwidth_gbps": 264
     },
     {
@@ -6926,6 +7136,13 @@
     },
     {
       "name": "Radeon R9 280",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 3,
+      "bandwidth_gbps": 240
+    },
+    {
+      "name": "Radeon Sky 900",
       "aliases": [],
       "vendor": "amd",
       "vram_gb": 3,
@@ -7269,6 +7486,20 @@
     },
     {
       "name": "Radeon R7 370",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 2,
+      "bandwidth_gbps": 179.2
+    },
+    {
+      "name": "Radeon R9 270",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 2,
+      "bandwidth_gbps": 179.2
+    },
+    {
+      "name": "Radeon R9 270X",
       "aliases": [],
       "vendor": "amd",
       "vram_gb": 2,
@@ -7639,6 +7870,13 @@
       "bandwidth_gbps": 153.6
     },
     {
+      "name": "Radeon Sky 500",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 4,
+      "bandwidth_gbps": 153.6
+    },
+    {
       "name": "Zhongshan Subor Z+ GPU",
       "aliases": [],
       "vendor": "amd",
@@ -7689,6 +7927,13 @@
     },
     {
       "name": "Radeon RX 6550M",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 4,
+      "bandwidth_gbps": 144
+    },
+    {
+      "name": "Radeon RX 9050 4 GB",
       "aliases": [],
       "vendor": "amd",
       "vram_gb": 4,
@@ -8021,6 +8266,13 @@
       "aliases": [],
       "vendor": "amd",
       "vram_gb": 2,
+      "bandwidth_gbps": 104
+    },
+    {
+      "name": "Radeon R9 260 OEM",
+      "aliases": [],
+      "vendor": "amd",
+      "vram_gb": 1,
       "bandwidth_gbps": 104
     },
     {
@@ -10578,6 +10830,15 @@
       "bandwidth_gbps": 456
     },
     {
+      "name": "Intel Arc Pro B60 Dual",
+      "aliases": [
+        "Arc Pro B60 Dual"
+      ],
+      "vendor": "intel",
+      "vram_gb": 24,
+      "bandwidth_gbps": 456
+    },
+    {
       "name": "Arc Pro A60",
       "aliases": [],
       "vendor": "intel",
@@ -10711,6 +10972,24 @@
       "bandwidth_gbps": 186
     },
     {
+      "name": "Intel Arc A380E",
+      "aliases": [
+        "Arc A380E"
+      ],
+      "vendor": "intel",
+      "vram_gb": 6,
+      "bandwidth_gbps": 186
+    },
+    {
+      "name": "Intel Arc A380E x2",
+      "aliases": [
+        "Arc A380E x2"
+      ],
+      "vendor": "intel",
+      "vram_gb": 6,
+      "bandwidth_gbps": 186
+    },
+    {
       "name": "Aubrey Isle",
       "aliases": [],
       "vendor": "intel",
@@ -10734,6 +11013,15 @@
     {
       "name": "Arc A350",
       "aliases": [],
+      "vendor": "intel",
+      "vram_gb": 4,
+      "bandwidth_gbps": 124
+    },
+    {
+      "name": "Intel Arc A310E",
+      "aliases": [
+        "Arc A310E"
+      ],
       "vendor": "intel",
       "vram_gb": 4,
       "bandwidth_gbps": 124

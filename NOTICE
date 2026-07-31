@@ -4,10 +4,9 @@ Copyright 2026 onepunk
 This product includes data from the dbgpu project by Benjamin Paine:
 https://github.com/painebenjamin/dbgpu
 
-dbgpu is licensed under the MIT License. Its bundled dataset is derived from
-the TechPowerUp GPU Database (https://www.techpowerup.com/gpu-specs/). The
-imported dataset, its exact tool version, checksum, and retrieval date are
-recorded in data/imports/dbgpu/metadata.json.
+dbgpu is licensed under the MIT License. The imported dataset, its exact tool
+version, checksum, and retrieval date are recorded in
+data/imports/dbgpu/metadata.json.
 
 Open GPU DB adds normalization, stable identifiers, aliases, official
 vendor corrections and additions, field-level provenance, validation, and

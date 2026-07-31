@@ -1,13 +1,13 @@
 [
   {
     "id": "dbgpu",
-    "name": "dbgpu TechPowerUp dataset",
+    "name": "dbgpu dataset",
     "kind": "community",
     "url": "https://github.com/painebenjamin/dbgpu",
     "license": "MIT",
     "retrieved_at": "2026-07-30",
     "revision": "2025.12",
-    "notes": "Broad NVIDIA, AMD, and Intel coverage; the dbgpu project derives its bundled dataset from the TechPowerUp GPU database."
+    "notes": "Broad NVIDIA, AMD, and Intel coverage from the pinned dbgpu release."
   },
   {
     "id": "nvidia-hgx-b-series",
@@ -43,6 +43,35 @@
     "kind": "vendor",
     "url": "https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2026-03/intel-arc-pro-b-series-graphics-quick-reference-guide-v1-0.pdf",
     "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "intel-arc-pro-b-series-availability",
+    "name": "Intel Arc Pro B65 and B70 availability announcement",
+    "kind": "vendor",
+    "url": "https://newsroom.intel.com/client-computing/intel-core-ultra-series-3-with-vpro-powers-next-gen-pcs-on-18a",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "amd-instinct-mi350p",
+    "name": "AMD Instinct MI350P product brochure",
+    "kind": "vendor",
+    "url": "https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/other/amd-instinct-mi350p-product-brochure.pdf",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "nvidia-rtx-pro-4500-server",
+    "name": "NVIDIA RTX PRO 4500 Blackwell Server Edition specifications",
+    "kind": "vendor",
+    "url": "https://www.nvidia.com/en-sg/data-center/rtx-pro-4500-blackwell-server-edition/",
+    "retrieved_at": "2026-07-30"
+  },
+  {
+    "id": "community-specification",
+    "name": "Community GPU specification reference",
+    "kind": "community",
+    "url": "https://www.techpowerup.com/gpu-specs/",
+    "retrieved_at": "2026-07-30",
+    "notes": "Record-level references for maintained catalog additions."
   },
   {
     "id": "apple-m1",

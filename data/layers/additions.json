@@ -6,11 +6,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M1",
     "release_date": "2020-11-10",
-    "memory": {"capacity_gb": 16, "type": "Unified", "bandwidth_gbps": 68, "unified": true},
+    "memory": {
+      "capacity_gb": 16,
+      "type": "Unified",
+      "bandwidth_gbps": 68,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m1", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m1",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m1-pro",
@@ -19,11 +39,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M1",
     "release_date": "2021-10-18",
-    "memory": {"capacity_gb": 32, "type": "Unified", "bandwidth_gbps": 200, "unified": true},
+    "memory": {
+      "capacity_gb": 32,
+      "type": "Unified",
+      "bandwidth_gbps": 200,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m1-pro-max", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m1-pro-max",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m1-max",
@@ -32,11 +72,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M1",
     "release_date": "2021-10-18",
-    "memory": {"capacity_gb": 64, "type": "Unified", "bandwidth_gbps": 400, "unified": true},
+    "memory": {
+      "capacity_gb": 64,
+      "type": "Unified",
+      "bandwidth_gbps": 400,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m1-pro-max", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m1-pro-max",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m1-ultra",
@@ -45,11 +105,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M1",
     "release_date": "2022-03-08",
-    "memory": {"capacity_gb": 128, "type": "Unified", "bandwidth_gbps": 800, "unified": true},
+    "memory": {
+      "capacity_gb": 128,
+      "type": "Unified",
+      "bandwidth_gbps": 800,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m1-ultra", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m1-ultra",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m2",
@@ -58,11 +138,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M2",
     "release_date": "2022-06-06",
-    "memory": {"capacity_gb": 24, "type": "Unified", "bandwidth_gbps": 100, "unified": true},
+    "memory": {
+      "capacity_gb": 24,
+      "type": "Unified",
+      "bandwidth_gbps": 100,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m2", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m2",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m2-pro",
@@ -71,11 +171,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M2",
     "release_date": "2023-01-17",
-    "memory": {"capacity_gb": 32, "type": "Unified", "bandwidth_gbps": 200, "unified": true},
+    "memory": {
+      "capacity_gb": 32,
+      "type": "Unified",
+      "bandwidth_gbps": 200,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m2-pro-max", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m2-pro-max",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m2-max",
@@ -84,11 +204,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M2",
     "release_date": "2023-01-17",
-    "memory": {"capacity_gb": 96, "type": "Unified", "bandwidth_gbps": 400, "unified": true},
+    "memory": {
+      "capacity_gb": 96,
+      "type": "Unified",
+      "bandwidth_gbps": 400,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m2-pro-max", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m2-pro-max",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m2-ultra",
@@ -97,11 +237,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M2",
     "release_date": "2023-06-05",
-    "memory": {"capacity_gb": 192, "type": "Unified", "bandwidth_gbps": 800, "unified": true},
+    "memory": {
+      "capacity_gb": 192,
+      "type": "Unified",
+      "bandwidth_gbps": 800,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m2-ultra", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m2-ultra",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m3",
@@ -110,11 +270,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M3",
     "release_date": "2023-10-30",
-    "memory": {"capacity_gb": 24, "type": "Unified", "bandwidth_gbps": 100, "unified": true},
+    "memory": {
+      "capacity_gb": 24,
+      "type": "Unified",
+      "bandwidth_gbps": 100,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m3-family", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m3-family",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m3-pro",
@@ -123,11 +303,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M3",
     "release_date": "2023-10-30",
-    "memory": {"capacity_gb": 36, "type": "Unified", "bandwidth_gbps": 150, "unified": true},
+    "memory": {
+      "capacity_gb": 36,
+      "type": "Unified",
+      "bandwidth_gbps": 150,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m3-family", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m3-family",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m3-max",
@@ -136,11 +336,31 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M3",
     "release_date": "2023-10-30",
-    "memory": {"capacity_gb": 128, "type": "Unified", "bandwidth_gbps": 400, "unified": true},
+    "memory": {
+      "capacity_gb": 128,
+      "type": "Unified",
+      "bandwidth_gbps": 400,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "unknown",
-    "provenance": [{"source_id": "apple-m3-family", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m3-family",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m3-ultra",
@@ -149,11 +369,32 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M3",
     "release_date": "2025-03-05",
-    "memory": {"capacity_gb": 512, "type": "Unified", "bandwidth_gbps": 819, "unified": true},
+    "memory": {
+      "capacity_gb": 512,
+      "type": "Unified",
+      "bandwidth_gbps": 819,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "apple-m3-ultra", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m3-ultra",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m4",
@@ -162,11 +403,32 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M4",
     "release_date": "2024-05-07",
-    "memory": {"capacity_gb": 32, "type": "Unified", "bandwidth_gbps": 120, "unified": true},
+    "memory": {
+      "capacity_gb": 32,
+      "type": "Unified",
+      "bandwidth_gbps": 120,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "apple-m4", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m4",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m4-pro",
@@ -175,11 +437,32 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M4",
     "release_date": "2024-10-30",
-    "memory": {"capacity_gb": 64, "type": "Unified", "bandwidth_gbps": 273, "unified": true},
+    "memory": {
+      "capacity_gb": 64,
+      "type": "Unified",
+      "bandwidth_gbps": 273,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "apple-m4-pro-max", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m4-pro-max",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m4-max",
@@ -188,11 +471,32 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M4",
     "release_date": "2024-10-30",
-    "memory": {"capacity_gb": 128, "type": "Unified", "bandwidth_gbps": 546, "unified": true},
+    "memory": {
+      "capacity_gb": 128,
+      "type": "Unified",
+      "bandwidth_gbps": 546,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "apple-m4-pro-max", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m4-pro-max",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m5",
@@ -201,11 +505,32 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M5",
     "release_date": "2025-10-15",
-    "memory": {"capacity_gb": 32, "type": "Unified", "bandwidth_gbps": 153, "unified": true},
+    "memory": {
+      "capacity_gb": 32,
+      "type": "Unified",
+      "bandwidth_gbps": 153,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "apple-m5", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m5",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m5-pro",
@@ -214,11 +539,32 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M5",
     "release_date": "2026-03-03",
-    "memory": {"capacity_gb": 64, "type": "Unified", "bandwidth_gbps": 307, "unified": true},
+    "memory": {
+      "capacity_gb": 64,
+      "type": "Unified",
+      "bandwidth_gbps": 307,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "apple-m5-pro-max", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m5-pro-max",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-m5-max",
@@ -227,11 +573,32 @@
     "device_type": "soc",
     "architecture": "Apple Silicon M5",
     "release_date": "2026-03-03",
-    "memory": {"capacity_gb": 128, "type": "Unified", "bandwidth_gbps": 614, "unified": true},
+    "memory": {
+      "capacity_gb": 128,
+      "type": "Unified",
+      "bandwidth_gbps": 614,
+      "unified": true
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "apple-m5-pro-max", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "apple-m5-pro-max",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "nvidia-vera-rubin",
@@ -239,11 +606,34 @@
     "vendor": "nvidia",
     "device_type": "accelerator",
     "architecture": "Rubin",
-    "memory": {"capacity_gb": 288, "type": "HBM4", "bandwidth_gbps": 22000, "unified": false},
+    "memory": {
+      "capacity_gb": 288,
+      "type": "HBM4",
+      "bandwidth_gbps": 22000,
+      "unified": false
+    },
     "aliases": [],
-    "interconnects": ["nvlink"],
+    "interconnects": [
+      "nvlink"
+    ],
     "status": "announced",
-    "provenance": [{"source_id": "nvidia-vera-rubin", "fields": ["name", "vendor", "device_type", "architecture", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "interconnects", "status"]}]
+    "provenance": [
+      {
+        "source_id": "nvidia-vera-rubin",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "amd-instinct-mi455x",
@@ -251,11 +641,36 @@
     "vendor": "amd",
     "device_type": "accelerator",
     "architecture": "CDNA 5",
-    "memory": {"capacity_gb": 432, "type": "HBM4", "bandwidth_gbps": 23300, "unified": false},
+    "release_date": "2026-07-23",
+    "memory": {
+      "capacity_gb": 432,
+      "type": "HBM4",
+      "bandwidth_gbps": 23300,
+      "unified": false
+    },
     "aliases": [],
-    "interconnects": ["ualink"],
-    "status": "announced",
-    "provenance": [{"source_id": "amd-instinct-mi455x", "fields": ["name", "vendor", "device_type", "architecture", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "interconnects", "status"]}]
+    "interconnects": [
+      "ualink"
+    ],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "amd-instinct-mi455x",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "intel-arc-pro-b70",
@@ -263,12 +678,38 @@
     "vendor": "intel",
     "device_type": "discrete",
     "architecture": "Xe2",
-    "release_date": "2026-03-01",
-    "memory": {"capacity_gb": 32, "type": "GDDR6", "bandwidth_gbps": 608, "unified": false},
+    "release_date": "2026-03-25",
+    "memory": {
+      "capacity_gb": 32,
+      "type": "GDDR6",
+      "bandwidth_gbps": 608,
+      "unified": false
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "intel-arc-pro-b-series", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "intel-arc-pro-b-series",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      },
+      {
+        "source_id": "intel-arc-pro-b-series-availability",
+        "fields": [
+          "release_date",
+          "status"
+        ]
+      }
+    ]
   },
   {
     "id": "intel-arc-pro-b65",
@@ -276,11 +717,3579 @@
     "vendor": "intel",
     "device_type": "discrete",
     "architecture": "Xe2",
-    "release_date": "2026-03-01",
-    "memory": {"capacity_gb": 32, "type": "GDDR6", "bandwidth_gbps": 608, "unified": false},
+    "release_date": "2026-04-01",
+    "memory": {
+      "capacity_gb": 32,
+      "type": "GDDR6",
+      "bandwidth_gbps": 608,
+      "unified": false
+    },
     "aliases": [],
     "interconnects": [],
     "status": "active",
-    "provenance": [{"source_id": "intel-arc-pro-b-series", "fields": ["name", "vendor", "device_type", "architecture", "release_date", "memory.capacity_gb", "memory.type", "memory.bandwidth_gbps", "memory.unified", "status"]}]
+    "provenance": [
+      {
+        "source_id": "intel-arc-pro-b-series",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified"
+        ]
+      },
+      {
+        "source_id": "intel-arc-pro-b-series-availability",
+        "fields": [
+          "release_date",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-rx-9050-4-gb",
+    "name": "Radeon RX 9050 4 GB",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "RDNA 4",
+    "generation": "Navi IV (RX 9000)",
+    "release_date": "2026-07-28",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR6",
+      "bandwidth_gbps": 144,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Navi 44",
+      "base_clock_mhz": 2600,
+      "memory_clock_mhz": 2250,
+      "memory_bus_bits": 64,
+      "shading_units": 1024,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4404",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-rx-9050-4-gb.c4404",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-rx-9050-8-gb",
+    "name": "Radeon RX 9050 8 GB",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "RDNA 4",
+    "generation": "Navi IV (RX 9000)",
+    "release_date": "2026-07-28",
+    "memory": {
+      "capacity_gb": 8,
+      "type": "GDDR6",
+      "bandwidth_gbps": 288,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Navi 44",
+      "base_clock_mhz": 2600,
+      "memory_clock_mhz": 2250,
+      "memory_bus_bits": 128,
+      "shading_units": 1024,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4424",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-rx-9050-8-gb.c4424",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-instinct-mi350p",
+    "name": "AMD Instinct MI350P",
+    "vendor": "amd",
+    "device_type": "accelerator",
+    "architecture": "CDNA 4",
+    "generation": "Radeon Instinct (MIx)",
+    "release_date": "2026-05-07",
+    "memory": {
+      "capacity_gb": 144,
+      "type": "HBM3e",
+      "bandwidth_gbps": 4000,
+      "unified": false
+    },
+    "specs": {
+      "chip": "MI350 128CU",
+      "process_nm": 3,
+      "base_clock_mhz": 2200,
+      "memory_bus_bits": 4096,
+      "shading_units": 8192,
+      "tdp_w": 600,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [
+      "Radeon Instinct MI350P"
+    ],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "amd-instinct-mi350p",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      },
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4402",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-instinct-mi350p.c4402",
+        "fields": [
+          "generation",
+          "release_date"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-steam-machine-gpu",
+    "name": "Steam Machine GPU",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "RDNA 3",
+    "generation": "Console GPU (Valve)",
+    "release_date": "2026-06-29",
+    "memory": {
+      "capacity_gb": 8,
+      "type": "GDDR6",
+      "bandwidth_gbps": 288,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Navi 33",
+      "base_clock_mhz": 2450,
+      "memory_clock_mhz": 2250,
+      "memory_bus_bits": 128,
+      "shading_units": 1792,
+      "bus_interface": "PCIe 4.0 x8"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4373",
+        "source_url": "https://www.techpowerup.com/gpu-specs/steam-machine-gpu.c4373",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-graphics-2-xe-mobile-panther-lake",
+    "name": "Intel Arc Graphics 2 Xe Mobile (Panther Lake)",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-M (Panther Lake)",
+    "release_date": "2026-01-27",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Panther Lake",
+      "base_clock_mhz": 2300,
+      "shading_units": 256,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4398",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-graphics-2-xe-mobile.c4398",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-graphics-4-xe-mobile-panther-lake",
+    "name": "Intel Arc Graphics 4 Xe Mobile (Panther Lake)",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-M (Panther Lake)",
+    "release_date": "2026-01-27",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Panther Lake",
+      "base_clock_mhz": 2300,
+      "shading_units": 512,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4399",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-graphics-4-xe-mobile.c4399",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-b370",
+    "name": "Intel Arc B370",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-M (Panther Lake)",
+    "release_date": "2026-01-27",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Panther Lake",
+      "base_clock_mhz": 2400,
+      "shading_units": 1280,
+      "bus_interface": "IGP"
+    },
+    "aliases": [
+      "Arc B370"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4382",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-b370.c4382",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-b390",
+    "name": "Intel Arc B390",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-M (Panther Lake)",
+    "release_date": "2026-01-27",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Panther Lake",
+      "base_clock_mhz": 2500,
+      "shading_units": 1536,
+      "bus_interface": "IGP"
+    },
+    "aliases": [
+      "Arc B390"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4381",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-b390.c4381",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-g3",
+    "name": "Intel Arc G3",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-M (Panther Lake)",
+    "release_date": "2026-06-01",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Panther Lake",
+      "base_clock_mhz": 2400,
+      "shading_units": 1280,
+      "bus_interface": "IGP"
+    },
+    "aliases": [
+      "Arc G3"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4411",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-g3.c4411",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-g3-extreme",
+    "name": "Intel Arc G3 Extreme",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-M (Panther Lake)",
+    "release_date": "2026-06-01",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Panther Lake",
+      "base_clock_mhz": 2500,
+      "shading_units": 1536,
+      "bus_interface": "IGP"
+    },
+    "aliases": [
+      "Arc G3 Extreme"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4412",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-g3-extreme.c4412",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-graphics-1-xe-mobile-wildcat-lake",
+    "name": "Intel Arc Graphics 1 Xe Mobile (Wildcat Lake)",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-M (Wildcat Lake)",
+    "release_date": "2026-04-16",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Wildcat Lake",
+      "base_clock_mhz": 2300,
+      "shading_units": 128,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4422",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-graphics-1-xe-mobile.c4422",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-graphics-2-xe-mobile-wildcat-lake",
+    "name": "Intel Arc Graphics 2 Xe Mobile (Wildcat Lake)",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-M (Wildcat Lake)",
+    "release_date": "2026-04-16",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Wildcat Lake",
+      "base_clock_mhz": 2500,
+      "shading_units": 256,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4421",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-graphics-2-xe-mobile.c4421",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-pro-b370",
+    "name": "Intel Arc Pro B370",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-WM (Panther Lake)",
+    "release_date": "2026-01-27",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Panther Lake",
+      "base_clock_mhz": 2400,
+      "shading_units": 1280,
+      "bus_interface": "IGP"
+    },
+    "aliases": [
+      "Arc Pro B370"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4397",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-pro-b370.c4397",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-pro-b390",
+    "name": "Intel Arc Pro B390",
+    "vendor": "intel",
+    "device_type": "integrated",
+    "architecture": "Xe3",
+    "generation": "Arc Graphics-WM (Panther Lake)",
+    "release_date": "2026-01-27",
+    "memory": {
+      "capacity_gb": null,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Panther Lake",
+      "base_clock_mhz": 2500,
+      "shading_units": 1536,
+      "bus_interface": "IGP"
+    },
+    "aliases": [
+      "Arc Pro B390"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4396",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-pro-b390.c4396",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lisuan-tech-lx-7g100",
+    "name": "Lisuan Tech LX 7G100",
+    "vendor": "lisuan-tech",
+    "device_type": "discrete",
+    "generation": "7G100",
+    "release_date": "2026-06-18",
+    "memory": {
+      "capacity_gb": 12,
+      "type": "GDDR6",
+      "bandwidth_gbps": 432,
+      "unified": false
+    },
+    "specs": {
+      "chip": "7G106",
+      "base_clock_mhz": 2000,
+      "memory_clock_mhz": 2250,
+      "memory_bus_bits": 192,
+      "shading_units": 6144,
+      "bus_interface": "PCIe 4.0 x16"
+    },
+    "aliases": [
+      "LX 7G100"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4406",
+        "source_url": "https://www.techpowerup.com/gpu-specs/lx-7g100.c4406",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lisuan-tech-lx-max",
+    "name": "Lisuan Tech LX MAX",
+    "vendor": "lisuan-tech",
+    "device_type": "discrete",
+    "generation": "7G100",
+    "release_date": "2026-03-17",
+    "memory": {
+      "capacity_gb": 12,
+      "type": "GDDR6",
+      "bandwidth_gbps": 432,
+      "unified": false
+    },
+    "specs": {
+      "chip": "7G106",
+      "base_clock_mhz": 2000,
+      "memory_clock_mhz": 2250,
+      "memory_bus_bits": 192,
+      "shading_units": 6144,
+      "bus_interface": "PCIe 4.0 x16"
+    },
+    "aliases": [
+      "LX MAX"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4409",
+        "source_url": "https://www.techpowerup.com/gpu-specs/lx-max.c4409",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lisuan-tech-lx-pro",
+    "name": "Lisuan Tech LX PRO",
+    "vendor": "lisuan-tech",
+    "device_type": "discrete",
+    "generation": "7G100",
+    "release_date": "2026-03-17",
+    "memory": {
+      "capacity_gb": 24,
+      "type": "GDDR6",
+      "bandwidth_gbps": 432,
+      "unified": false
+    },
+    "specs": {
+      "chip": "7G105",
+      "base_clock_mhz": 2000,
+      "memory_clock_mhz": 2250,
+      "memory_bus_bits": 192,
+      "shading_units": 6144,
+      "bus_interface": "PCIe 4.0 x16"
+    },
+    "aliases": [
+      "LX PRO"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4408",
+        "source_url": "https://www.techpowerup.com/gpu-specs/lx-pro.c4408",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lisuan-tech-lx-ultra",
+    "name": "Lisuan Tech LX ULTRA",
+    "vendor": "lisuan-tech",
+    "device_type": "discrete",
+    "generation": "7G100",
+    "release_date": "2026-03-17",
+    "memory": {
+      "capacity_gb": 24,
+      "type": "GDDR6",
+      "bandwidth_gbps": 432,
+      "unified": false
+    },
+    "specs": {
+      "chip": "7G105",
+      "base_clock_mhz": 2000,
+      "memory_clock_mhz": 2250,
+      "memory_bus_bits": 192,
+      "shading_units": 6144,
+      "bus_interface": "PCIe 4.0 x16"
+    },
+    "aliases": [
+      "LX ULTRA"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4407",
+        "source_url": "https://www.techpowerup.com/gpu-specs/lx-ultra.c4407",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-geforce-rtx-5060-gb205",
+    "name": "GeForce RTX 5060 GB205",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "architecture": "Blackwell 2.0",
+    "generation": "GeForce 50",
+    "release_date": "2026-06-01",
+    "memory": {
+      "capacity_gb": 8,
+      "type": "GDDR7",
+      "bandwidth_gbps": 448,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GB205",
+      "base_clock_mhz": 2497,
+      "memory_clock_mhz": 1750,
+      "memory_bus_bits": 128,
+      "shading_units": 3840,
+      "bus_interface": "PCIe 5.0 x8"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4405",
+        "source_url": "https://www.techpowerup.com/gpu-specs/geforce-rtx-5060-gb205.c4405",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-rtx-pro-4500-blackwell-server",
+    "name": "NVIDIA RTX PRO 4500 Blackwell Server Edition",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "architecture": "Blackwell",
+    "generation": "Server Blackwell (Bxx)",
+    "release_date": "2026-03-17",
+    "memory": {
+      "capacity_gb": 32,
+      "type": "GDDR7",
+      "bandwidth_gbps": 800,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GB203",
+      "base_clock_mhz": 2415,
+      "memory_clock_mhz": 1563,
+      "memory_bus_bits": 256,
+      "shading_units": 10496,
+      "tdp_w": 165,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [
+      "RTX PRO 4500 Blackwell Server"
+    ],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "nvidia-rtx-pro-4500-server",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      },
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4387",
+        "source_url": "https://www.techpowerup.com/gpu-specs/rtx-pro-4500-blackwell-server.c4387",
+        "fields": [
+          "generation",
+          "release_date"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-geforce-rtx-5070-mobile-12-gb",
+    "name": "GeForce RTX 5070 Mobile 12 GB",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "architecture": "Blackwell 2.0",
+    "generation": "GeForce 50 Mobile",
+    "release_date": "2026-06-01",
+    "memory": {
+      "capacity_gb": 12,
+      "type": "GDDR7",
+      "bandwidth_gbps": 576,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GB206",
+      "base_clock_mhz": 1425,
+      "memory_clock_mhz": 1500,
+      "memory_bus_bits": 192,
+      "shading_units": 4608,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4418",
+        "source_url": "https://www.techpowerup.com/gpu-specs/geforce-rtx-5070-mobile-12-gb.c4418",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-n1-16sm",
+    "name": "NVIDIA N1 16SM",
+    "vendor": "nvidia",
+    "device_type": "soc",
+    "architecture": "Blackwell",
+    "generation": "Blackwell IGP (N1x)",
+    "release_date": "2026-06-01",
+    "memory": {
+      "capacity_gb": 128,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 273,
+      "unified": true
+    },
+    "specs": {
+      "chip": "GB20B",
+      "base_clock_mhz": 2346,
+      "memory_clock_mhz": 1067,
+      "memory_bus_bits": 256,
+      "shading_units": 2048,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [
+      "N1 16SM"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4414",
+        "source_url": "https://www.techpowerup.com/gpu-specs/n1-16sm.c4414",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-n1-20sm",
+    "name": "NVIDIA N1 20SM",
+    "vendor": "nvidia",
+    "device_type": "soc",
+    "architecture": "Blackwell",
+    "generation": "Blackwell IGP (N1x)",
+    "release_date": "2026-06-01",
+    "memory": {
+      "capacity_gb": 128,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 273,
+      "unified": true
+    },
+    "specs": {
+      "chip": "GB20B",
+      "base_clock_mhz": 2346,
+      "memory_clock_mhz": 1067,
+      "memory_bus_bits": 256,
+      "shading_units": 2560,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [
+      "N1 20SM"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4415",
+        "source_url": "https://www.techpowerup.com/gpu-specs/n1-20sm.c4415",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-n1x-40sm",
+    "name": "NVIDIA N1X 40SM",
+    "vendor": "nvidia",
+    "device_type": "soc",
+    "architecture": "Blackwell",
+    "generation": "Blackwell IGP (N1x)",
+    "release_date": "2026-06-01",
+    "memory": {
+      "capacity_gb": 128,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 273,
+      "unified": true
+    },
+    "specs": {
+      "chip": "GB20B",
+      "base_clock_mhz": 2346,
+      "memory_clock_mhz": 1067,
+      "memory_bus_bits": 256,
+      "shading_units": 5120,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [
+      "N1X 40SM"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4413",
+        "source_url": "https://www.techpowerup.com/gpu-specs/n1x-40sm.c4413",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-n1x-48sm",
+    "name": "NVIDIA N1X 48SM",
+    "vendor": "nvidia",
+    "device_type": "soc",
+    "architecture": "Blackwell",
+    "generation": "Blackwell IGP (N1x)",
+    "release_date": "2026-06-01",
+    "memory": {
+      "capacity_gb": 128,
+      "type": "LPDDR5X",
+      "bandwidth_gbps": 273,
+      "unified": true
+    },
+    "specs": {
+      "chip": "GB20B",
+      "base_clock_mhz": 2346,
+      "memory_clock_mhz": 1067,
+      "memory_bus_bits": 256,
+      "shading_units": 6144,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [
+      "N1X 48SM"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4410",
+        "source_url": "https://www.techpowerup.com/gpu-specs/n1x-48sm.c4410",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "generation",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-rx-9060-xt-lp",
+    "name": "Radeon RX 9060 XT LP",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "RDNA 4",
+    "release_date": "2025-12-17",
+    "memory": {
+      "capacity_gb": 16,
+      "type": "GDDR6",
+      "bandwidth_gbps": 322.3,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Navi 44",
+      "base_clock_mhz": 3050,
+      "memory_clock_mhz": 2518,
+      "memory_bus_bits": 128,
+      "shading_units": 2048,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4380",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-rx-9060-xt-lp.c4380",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-820m",
+    "name": "Radeon 820M",
+    "vendor": "amd",
+    "device_type": "integrated",
+    "architecture": "RDNA 3.5",
+    "release_date": "2025-03-01",
+    "memory": {
+      "capacity_gb": null,
+      "type": "DDR5",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Krackan Point",
+      "base_clock_mhz": 2800,
+      "shading_units": 128,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4386",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-820m.c4386",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-840m",
+    "name": "Radeon 840M",
+    "vendor": "amd",
+    "device_type": "integrated",
+    "architecture": "RDNA 3.5",
+    "release_date": "2025-03-01",
+    "memory": {
+      "capacity_gb": null,
+      "type": "DDR5",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Krackan Point",
+      "base_clock_mhz": 2900,
+      "shading_units": 256,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4385",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-840m.c4385",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-pro-b60-dual",
+    "name": "Intel Arc Pro B60 Dual",
+    "vendor": "intel",
+    "device_type": "discrete",
+    "architecture": "Xe2",
+    "release_date": "2025-09-05",
+    "memory": {
+      "capacity_gb": 24,
+      "type": "GDDR6",
+      "bandwidth_gbps": 456,
+      "unified": false
+    },
+    "specs": {
+      "chip": "BMG-G21",
+      "base_clock_mhz": 2400,
+      "memory_clock_mhz": 2375,
+      "memory_bus_bits": 192,
+      "shading_units": 2560,
+      "bus_interface": "PCIe 5.0 x8"
+    },
+    "aliases": [
+      "Arc Pro B60 Dual"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4384",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-pro-b60-dual.c4384",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-h20-nvl16",
+    "name": "NVIDIA H20 NVL16",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "architecture": "Hopper",
+    "release_date": "2025-09-02",
+    "memory": {
+      "capacity_gb": 96,
+      "type": "HBM3",
+      "bandwidth_gbps": 4000,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GH100",
+      "base_clock_mhz": 1980,
+      "memory_clock_mhz": 1313,
+      "memory_bus_bits": 6144,
+      "shading_units": 9984,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [
+      "H20 NVL16"
+    ],
+    "interconnects": [
+      "nvlink",
+      "pcie"
+    ],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4419",
+        "source_url": "https://www.techpowerup.com/gpu-specs/h20-nvl16.c4419",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-a310e",
+    "name": "Intel Arc A310E",
+    "vendor": "intel",
+    "device_type": "discrete",
+    "architecture": "Xe HPG",
+    "release_date": "2024-04-01",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR6",
+      "bandwidth_gbps": 124,
+      "unified": false
+    },
+    "specs": {
+      "chip": "DG2-128",
+      "base_clock_mhz": 2000,
+      "memory_clock_mhz": 1937,
+      "memory_bus_bits": 64,
+      "shading_units": 768,
+      "bus_interface": "PCIe 4.0 x8"
+    },
+    "aliases": [
+      "Arc A310E"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4395",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-a310e.c4395",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-a380e-x2",
+    "name": "Intel Arc A380E x2",
+    "vendor": "intel",
+    "device_type": "discrete",
+    "architecture": "Xe HPG",
+    "release_date": "2024-04-01",
+    "memory": {
+      "capacity_gb": 6,
+      "type": "GDDR6",
+      "bandwidth_gbps": 186,
+      "unified": false
+    },
+    "specs": {
+      "chip": "DG2-128",
+      "base_clock_mhz": 2000,
+      "memory_clock_mhz": 1937,
+      "memory_bus_bits": 96,
+      "shading_units": 1024,
+      "bus_interface": "PCIe 4.0 x8"
+    },
+    "aliases": [
+      "Arc A380E x2"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4394",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-a380e-x2.c4394",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-arc-a380e",
+    "name": "Intel Arc A380E",
+    "vendor": "intel",
+    "device_type": "discrete",
+    "architecture": "Xe HPG",
+    "release_date": "2024-04-01",
+    "memory": {
+      "capacity_gb": 6,
+      "type": "GDDR6",
+      "bandwidth_gbps": 186,
+      "unified": false
+    },
+    "specs": {
+      "chip": "DG2-128",
+      "base_clock_mhz": 2000,
+      "memory_clock_mhz": 1937,
+      "memory_bus_bits": 96,
+      "shading_units": 1024,
+      "bus_interface": "PCIe 4.0 x8"
+    },
+    "aliases": [
+      "Arc A380E"
+    ],
+    "interconnects": [],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4393",
+        "source_url": "https://www.techpowerup.com/gpu-specs/arc-a380e.c4393",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-h20",
+    "name": "NVIDIA H20",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "architecture": "Hopper",
+    "release_date": "2024-02-01",
+    "memory": {
+      "capacity_gb": 96,
+      "type": "HBM3",
+      "bandwidth_gbps": 4000,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GH100",
+      "base_clock_mhz": 1980,
+      "memory_clock_mhz": 1313,
+      "memory_bus_bits": 6144,
+      "shading_units": 9984,
+      "bus_interface": "PCIe 5.0 x16"
+    },
+    "aliases": [
+      "H20"
+    ],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "active",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4420",
+        "source_url": "https://www.techpowerup.com/gpu-specs/h20.c4420",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-r9-260-oem",
+    "name": "Radeon R9 260 OEM",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "GCN 2.0",
+    "release_date": "2013-12-21",
+    "memory": {
+      "capacity_gb": 1,
+      "type": "GDDR5",
+      "bandwidth_gbps": 104,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Bonaire",
+      "base_clock_mhz": 1100,
+      "memory_clock_mhz": 1625,
+      "memory_bus_bits": 128,
+      "shading_units": 896,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2543",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-r9-260-oem.c2543",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-r9-270",
+    "name": "Radeon R9 270",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "GCN 1.0",
+    "release_date": "2013-11-13",
+    "memory": {
+      "capacity_gb": 2,
+      "type": "GDDR5",
+      "bandwidth_gbps": 179.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Curacao",
+      "base_clock_mhz": 925,
+      "memory_clock_mhz": 1400,
+      "memory_bus_bits": 256,
+      "shading_units": 1280,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2458",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-r9-270.c2458",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-r9-270x",
+    "name": "Radeon R9 270X",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "GCN 1.0",
+    "release_date": "2013-10-08",
+    "memory": {
+      "capacity_gb": 2,
+      "type": "GDDR5",
+      "bandwidth_gbps": 179.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Curacao",
+      "base_clock_mhz": 1050,
+      "memory_clock_mhz": 1400,
+      "memory_bus_bits": 256,
+      "shading_units": 1280,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2466",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-r9-270x.c2466",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-r9-280x",
+    "name": "Radeon R9 280X",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "GCN 1.0",
+    "release_date": "2013-10-08",
+    "memory": {
+      "capacity_gb": 3,
+      "type": "GDDR5",
+      "bandwidth_gbps": 268.8,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Tahiti",
+      "base_clock_mhz": 1000,
+      "memory_clock_mhz": 1400,
+      "memory_bus_bits": 384,
+      "shading_units": 2048,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2398",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-r9-280x.c2398",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-r9-290",
+    "name": "Radeon R9 290",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "GCN 2.0",
+    "release_date": "2013-11-05",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR5",
+      "bandwidth_gbps": 320,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Hawaii",
+      "base_clock_mhz": 947,
+      "memory_clock_mhz": 1250,
+      "memory_bus_bits": 512,
+      "shading_units": 2560,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2397",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-r9-290.c2397",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-r9-290x",
+    "name": "Radeon R9 290X",
+    "vendor": "amd",
+    "device_type": "discrete",
+    "architecture": "GCN 2.0",
+    "release_date": "2013-10-24",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR5",
+      "bandwidth_gbps": 320,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Hawaii",
+      "base_clock_mhz": 1000,
+      "memory_clock_mhz": 1250,
+      "memory_bus_bits": 512,
+      "shading_units": 2816,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2460",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-r9-290x.c2460",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-sky-500",
+    "name": "Radeon Sky 500",
+    "vendor": "amd",
+    "device_type": "accelerator",
+    "architecture": "GCN 1.0",
+    "release_date": "2013-03-27",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR5",
+      "bandwidth_gbps": 153.6,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Pitcairn",
+      "base_clock_mhz": 950,
+      "memory_clock_mhz": 1200,
+      "memory_bus_bits": 256,
+      "shading_units": 1280,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2276",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-sky-500.c2276",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-sky-700",
+    "name": "Radeon Sky 700",
+    "vendor": "amd",
+    "device_type": "accelerator",
+    "architecture": "GCN 1.0",
+    "release_date": "2013-03-27",
+    "memory": {
+      "capacity_gb": 6,
+      "type": "GDDR5",
+      "bandwidth_gbps": 264,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Tahiti",
+      "base_clock_mhz": 900,
+      "memory_clock_mhz": 1375,
+      "memory_bus_bits": 384,
+      "shading_units": 1792,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2279",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-sky-700.c2279",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amd-radeon-sky-900",
+    "name": "Radeon Sky 900",
+    "vendor": "amd",
+    "device_type": "accelerator",
+    "architecture": "GCN 1.0",
+    "release_date": "2013-03-27",
+    "memory": {
+      "capacity_gb": 3,
+      "type": "GDDR5",
+      "bandwidth_gbps": 240,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Tahiti",
+      "base_clock_mhz": 950,
+      "memory_clock_mhz": 1250,
+      "memory_bus_bits": 384,
+      "shading_units": 1792,
+      "bus_interface": "PCIe 3.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2278",
+        "source_url": "https://www.techpowerup.com/gpu-specs/radeon-sky-900.c2278",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "microsoft-xbox-one-gpu",
+    "name": "Xbox One GPU",
+    "vendor": "microsoft",
+    "device_type": "soc",
+    "architecture": "GCN 2.0",
+    "release_date": "2013-11-22",
+    "memory": {
+      "capacity_gb": 8,
+      "type": "DDR3",
+      "bandwidth_gbps": 68.2,
+      "unified": true
+    },
+    "specs": {
+      "chip": "Durango",
+      "base_clock_mhz": 853,
+      "memory_clock_mhz": 1066,
+      "memory_bus_bits": 256,
+      "shading_units": 768,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c2086",
+        "source_url": "https://www.techpowerup.com/gpu-specs/xbox-one-gpu.c2086",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s3-s3g-chrome-640",
+    "name": "S3G Chrome 640",
+    "vendor": "s3",
+    "device_type": "integrated",
+    "release_date": "2012-09-04",
+    "memory": {
+      "capacity_gb": null,
+      "type": "DDR3",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "VX11",
+      "base_clock_mhz": 480,
+      "shading_units": 64,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4348",
+        "source_url": "https://www.techpowerup.com/gpu-specs/s3g-chrome-640.c4348",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s3-s3g-chrome-645",
+    "name": "S3G Chrome 645",
+    "vendor": "s3",
+    "device_type": "integrated",
+    "release_date": "2012-09-04",
+    "memory": {
+      "capacity_gb": null,
+      "type": "DDR3",
+      "bandwidth_gbps": 0,
+      "unified": true
+    },
+    "specs": {
+      "chip": "VX11",
+      "base_clock_mhz": 699,
+      "shading_units": 64,
+      "bus_interface": "IGP"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4349",
+        "source_url": "https://www.techpowerup.com/gpu-specs/s3g-chrome-645.c4349",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s3-graphics-chrome-540-gtx",
+    "name": "S3 Graphics Chrome 540 GTX",
+    "vendor": "s3",
+    "device_type": "discrete",
+    "release_date": "2009-02-19",
+    "memory": {
+      "capacity_gb": 0.256,
+      "type": "GDDR3",
+      "bandwidth_gbps": 13.6,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Destination 4",
+      "base_clock_mhz": 800,
+      "memory_clock_mhz": 850,
+      "memory_bus_bits": 64,
+      "shading_units": 32,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [
+      "Graphics Chrome 540 GTX"
+    ],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4355",
+        "source_url": "https://www.techpowerup.com/gpu-specs/graphics-chrome-540-gtx.c4355",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-nvs-450",
+    "name": "Quadro NVS 450",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "release_date": "2008-11-11",
+    "memory": {
+      "capacity_gb": 0.256,
+      "type": "GDDR3",
+      "bandwidth_gbps": 11.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G98",
+      "base_clock_mhz": 480,
+      "memory_clock_mhz": 700,
+      "memory_bus_bits": 64,
+      "shading_units": 8,
+      "bus_interface": "PCIe 1.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1449",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-nvs-450.c1449",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-vx-200",
+    "name": "Quadro VX 200",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "release_date": "2008-01-08",
+    "memory": {
+      "capacity_gb": 0.512,
+      "type": "GDDR3",
+      "bandwidth_gbps": 51.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G92",
+      "base_clock_mhz": 450,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 256,
+      "shading_units": 112,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1745",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-vx-200.c1745",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-fx-4800-mac-edition",
+    "name": "Quadro FX 4800 Mac Edition",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "release_date": "2008-11-11",
+    "memory": {
+      "capacity_gb": 1.5,
+      "type": "GDDR3",
+      "bandwidth_gbps": 76.8,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GT200B",
+      "base_clock_mhz": 602,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 384,
+      "shading_units": 192,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1322",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-fx-4800-mac-edition.c1322",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-fx-5800",
+    "name": "Quadro FX 5800",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "release_date": "2008-11-11",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR3",
+      "bandwidth_gbps": 102.4,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GT200B",
+      "base_clock_mhz": 610,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 512,
+      "shading_units": 240,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1319",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-fx-5800.c1319",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-plex-1000-model-ii",
+    "name": "Quadro Plex 1000 Model II",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "release_date": "2008-07-25",
+    "memory": {
+      "capacity_gb": 0.512,
+      "type": "GDDR3",
+      "bandwidth_gbps": 33.6,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G70",
+      "base_clock_mhz": 470,
+      "memory_clock_mhz": 525,
+      "memory_bus_bits": 256,
+      "shading_units": 24,
+      "bus_interface": "PCIe 1.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c908",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-plex-1000-model-ii.c908",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-plex-1000-model-iv",
+    "name": "Quadro Plex 1000 Model IV",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "release_date": "2008-07-25",
+    "memory": {
+      "capacity_gb": 1.5,
+      "type": "GDDR3",
+      "bandwidth_gbps": 76.8,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G80",
+      "base_clock_mhz": 600,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 384,
+      "shading_units": 128,
+      "bus_interface": "PCIe 1.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c907",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-plex-1000-model-iv.c907",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-plex-2100-d4",
+    "name": "Quadro Plex 2100 D4",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "release_date": "2008-07-25",
+    "memory": {
+      "capacity_gb": 1,
+      "type": "GDDR3",
+      "bandwidth_gbps": 51.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G92",
+      "base_clock_mhz": 500,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 256,
+      "shading_units": 128,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c906",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-plex-2100-d4.c906",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-plex-2100-s4",
+    "name": "Quadro Plex 2100 S4",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "release_date": "2008-07-25",
+    "memory": {
+      "capacity_gb": 1.5,
+      "type": "GDDR3",
+      "bandwidth_gbps": 76.8,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G80",
+      "base_clock_mhz": 600,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 384,
+      "shading_units": 128,
+      "bus_interface": "PCIe 1.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c905",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-plex-2100-s4.c905",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-plex-2200-d2",
+    "name": "Quadro Plex 2200 D2",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "release_date": "2008-07-25",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR3",
+      "bandwidth_gbps": 102.4,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GT200B",
+      "base_clock_mhz": 648,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 512,
+      "shading_units": 240,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c904",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-plex-2200-d2.c904",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-plex-2200-s4",
+    "name": "Quadro Plex 2200 S4",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "release_date": "2008-07-25",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR3",
+      "bandwidth_gbps": 102.4,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GT200B",
+      "base_clock_mhz": 648,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 512,
+      "shading_units": 240,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c903",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-plex-2200-s4.c903",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-tesla-m1060",
+    "name": "Tesla M1060",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "architecture": "Tesla",
+    "release_date": "2008-06-01",
+    "memory": {
+      "capacity_gb": 2,
+      "type": "GDDR3",
+      "bandwidth_gbps": 102.4,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GT200B",
+      "base_clock_mhz": 610,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 512,
+      "shading_units": 240,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1888",
+        "source_url": "https://www.techpowerup.com/gpu-specs/tesla-m1060.c1888",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-tesla-s1070",
+    "name": "Tesla S1070",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "architecture": "Tesla",
+    "release_date": "2008-06-01",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR3",
+      "bandwidth_gbps": 102.4,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GT200B",
+      "base_clock_mhz": 610,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 512,
+      "shading_units": 240,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1540",
+        "source_url": "https://www.techpowerup.com/gpu-specs/tesla-s1070.c1540",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-tesla-s1075",
+    "name": "Tesla S1075",
+    "vendor": "nvidia",
+    "device_type": "accelerator",
+    "architecture": "Tesla",
+    "release_date": "2008-06-01",
+    "memory": {
+      "capacity_gb": 4,
+      "type": "GDDR3",
+      "bandwidth_gbps": 102.4,
+      "unified": false
+    },
+    "specs": {
+      "chip": "GT200B",
+      "base_clock_mhz": 610,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 512,
+      "shading_units": 240,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [
+      "pcie"
+    ],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1541",
+        "source_url": "https://www.techpowerup.com/gpu-specs/tesla-s1075.c1541",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "interconnects",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-nvs-150m",
+    "name": "Quadro NVS 150M",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "release_date": "2008-08-15",
+    "memory": {
+      "capacity_gb": 0.256,
+      "type": "GDDR3",
+      "bandwidth_gbps": 11.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G98S",
+      "base_clock_mhz": 530,
+      "memory_clock_mhz": 700,
+      "memory_bus_bits": 64,
+      "shading_units": 8,
+      "bus_interface": "MXM-I"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1474",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-nvs-150m.c1474",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-nvs-160m",
+    "name": "Quadro NVS 160M",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "release_date": "2008-08-15",
+    "memory": {
+      "capacity_gb": 0.256,
+      "type": "GDDR3",
+      "bandwidth_gbps": 11.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G98S",
+      "base_clock_mhz": 580,
+      "memory_clock_mhz": 700,
+      "memory_bus_bits": 64,
+      "shading_units": 8,
+      "bus_interface": "MXM-I"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1475",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-nvs-160m.c1475",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quadro-fx-770m",
+    "name": "Quadro FX 770M",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "release_date": "2008-08-14",
+    "memory": {
+      "capacity_gb": 0.512,
+      "type": "GDDR3",
+      "bandwidth_gbps": 25.6,
+      "unified": false
+    },
+    "specs": {
+      "chip": "G96",
+      "base_clock_mhz": 500,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 128,
+      "shading_units": 32,
+      "bus_interface": "MXM-II"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c1436",
+        "source_url": "https://www.techpowerup.com/gpu-specs/quadro-fx-770m.c1436",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s3-graphics-chrome-430-gt",
+    "name": "S3 Graphics Chrome 430 GT",
+    "vendor": "s3",
+    "device_type": "discrete",
+    "release_date": "2008-09-04",
+    "memory": {
+      "capacity_gb": 0.256,
+      "type": "DDR2",
+      "bandwidth_gbps": 8,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Destination 3",
+      "base_clock_mhz": 625,
+      "memory_clock_mhz": 500,
+      "memory_bus_bits": 64,
+      "shading_units": 32,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [
+      "Graphics Chrome 430 GT"
+    ],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4351",
+        "source_url": "https://www.techpowerup.com/gpu-specs/graphics-chrome-430-gt.c4351",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s3-graphics-chrome-440-gtx",
+    "name": "S3 Graphics Chrome 440 GTX",
+    "vendor": "s3",
+    "device_type": "discrete",
+    "release_date": "2008-09-04",
+    "memory": {
+      "capacity_gb": 0.256,
+      "type": "GDDR3",
+      "bandwidth_gbps": 12.8,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Destination 3",
+      "base_clock_mhz": 800,
+      "memory_clock_mhz": 800,
+      "memory_bus_bits": 64,
+      "shading_units": 32,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [
+      "Graphics Chrome 440 GTX"
+    ],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4352",
+        "source_url": "https://www.techpowerup.com/gpu-specs/graphics-chrome-440-gtx.c4352",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s3-graphics-chrome-530-gt",
+    "name": "S3 Graphics Chrome 530 GT",
+    "vendor": "s3",
+    "device_type": "discrete",
+    "release_date": "2008-11-20",
+    "memory": {
+      "capacity_gb": 0.512,
+      "type": "GDDR2",
+      "bandwidth_gbps": 8,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Destination 4",
+      "base_clock_mhz": 625,
+      "memory_clock_mhz": 500,
+      "memory_bus_bits": 64,
+      "shading_units": 32,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [
+      "Graphics Chrome 530 GT"
+    ],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4354",
+        "source_url": "https://www.techpowerup.com/gpu-specs/graphics-chrome-530-gt.c4354",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s3-gammachrome-s18-pro",
+    "name": "GammaChrome S18 Pro",
+    "vendor": "s3",
+    "device_type": "discrete",
+    "release_date": "2005-03-09",
+    "memory": {
+      "capacity_gb": 0.256,
+      "type": "DDR",
+      "bandwidth_gbps": 11.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Metropolis",
+      "base_clock_mhz": 400,
+      "memory_clock_mhz": 350,
+      "memory_bus_bits": 128,
+      "shading_units": 4,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4371",
+        "source_url": "https://www.techpowerup.com/gpu-specs/gammachrome-s18-pro.c4371",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s3-gammachrome-s18-ce",
+    "name": "GammaChrome S18 CE",
+    "vendor": "s3",
+    "device_type": "discrete",
+    "release_date": "2005-03-09",
+    "memory": {
+      "capacity_gb": 0.128,
+      "type": "DDR",
+      "bandwidth_gbps": 9.6,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Metropolis",
+      "base_clock_mhz": 400,
+      "memory_clock_mhz": 300,
+      "memory_bus_bits": 128,
+      "shading_units": 4,
+      "bus_interface": "PCIe 2.0 x16"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4372",
+        "source_url": "https://www.techpowerup.com/gpu-specs/gammachrome-s18-ce.c4372",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nvidia-geforce-fx-5700-le-pci",
+    "name": "GeForce FX 5700 LE PCI",
+    "vendor": "nvidia",
+    "device_type": "discrete",
+    "architecture": "Rankine",
+    "release_date": "2004-03-01",
+    "memory": {
+      "capacity_gb": 0.128,
+      "type": "DDR",
+      "bandwidth_gbps": 3.2,
+      "unified": false
+    },
+    "specs": {
+      "chip": "NV36",
+      "base_clock_mhz": 250,
+      "memory_clock_mhz": 200,
+      "memory_bus_bits": 64,
+      "shading_units": 4,
+      "bus_interface": "PCI"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4400",
+        "source_url": "https://www.techpowerup.com/gpu-specs/geforce-fx-5700-le-pci.c4400",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "architecture",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sis-xabre-80",
+    "name": "Xabre 80",
+    "vendor": "sis",
+    "device_type": "discrete",
+    "release_date": "2002-04-24",
+    "memory": {
+      "capacity_gb": 0.064,
+      "type": "DDR",
+      "bandwidth_gbps": 5.3,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Xabre",
+      "base_clock_mhz": 200,
+      "memory_clock_mhz": 166,
+      "memory_bus_bits": 128,
+      "shading_units": 4,
+      "bus_interface": "AGP 4x"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4338",
+        "source_url": "https://www.techpowerup.com/gpu-specs/xabre-80.c4338",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sis-xabre-200",
+    "name": "Xabre 200",
+    "vendor": "sis",
+    "device_type": "discrete",
+    "release_date": "2002-04-24",
+    "memory": {
+      "capacity_gb": 0.064,
+      "type": "DDR",
+      "bandwidth_gbps": 6.4,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Xabre",
+      "base_clock_mhz": 200,
+      "memory_clock_mhz": 200,
+      "memory_bus_bits": 128,
+      "shading_units": 4,
+      "bus_interface": "AGP 4x"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4339",
+        "source_url": "https://www.techpowerup.com/gpu-specs/xabre-200.c4339",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sis-xabre-400",
+    "name": "Xabre 400",
+    "vendor": "sis",
+    "device_type": "discrete",
+    "release_date": "2002-04-24",
+    "memory": {
+      "capacity_gb": 0.064,
+      "type": "DDR",
+      "bandwidth_gbps": 6.4,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Xabre",
+      "base_clock_mhz": 250,
+      "memory_clock_mhz": 200,
+      "memory_bus_bits": 128,
+      "shading_units": 4,
+      "bus_interface": "AGP 4x"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4340",
+        "source_url": "https://www.techpowerup.com/gpu-specs/xabre-400.c4340",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sis-xabre-600",
+    "name": "Xabre 600",
+    "vendor": "sis",
+    "device_type": "discrete",
+    "release_date": "2002-11-26",
+    "memory": {
+      "capacity_gb": 0.064,
+      "type": "DDR",
+      "bandwidth_gbps": 9.6,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Xabre II",
+      "base_clock_mhz": 300,
+      "memory_clock_mhz": 300,
+      "memory_bus_bits": 128,
+      "shading_units": 4,
+      "bus_interface": "AGP 8x"
+    },
+    "aliases": [],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4341",
+        "source_url": "https://www.techpowerup.com/gpu-specs/xabre-600.c4341",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sis-305",
+    "name": "SiS 305",
+    "vendor": "sis",
+    "device_type": "discrete",
+    "release_date": "2000-01-01",
+    "memory": {
+      "capacity_gb": 0.032,
+      "type": "SDR",
+      "bandwidth_gbps": 1,
+      "unified": false
+    },
+    "specs": {
+      "chip": "305",
+      "base_clock_mhz": 125,
+      "memory_clock_mhz": 125,
+      "memory_bus_bits": 64,
+      "shading_units": 1,
+      "bus_interface": "AGP 2x"
+    },
+    "aliases": [
+      "305"
+    ],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4336",
+        "source_url": "https://www.techpowerup.com/gpu-specs/305.c4336",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sis-315e",
+    "name": "SiS 315E",
+    "vendor": "sis",
+    "device_type": "discrete",
+    "release_date": "2000-12-11",
+    "memory": {
+      "capacity_gb": 0.064,
+      "type": "SDR",
+      "bandwidth_gbps": 1.1,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Mirage",
+      "base_clock_mhz": 143,
+      "memory_clock_mhz": 143,
+      "memory_bus_bits": 64,
+      "shading_units": 2,
+      "bus_interface": "AGP 2x"
+    },
+    "aliases": [
+      "315E"
+    ],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4334",
+        "source_url": "https://www.techpowerup.com/gpu-specs/315e.c4334",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sis-315-pro",
+    "name": "SiS 315 Pro",
+    "vendor": "sis",
+    "device_type": "discrete",
+    "release_date": "2000-12-11",
+    "memory": {
+      "capacity_gb": 0.064,
+      "type": "SDR",
+      "bandwidth_gbps": 1.1,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Mirage",
+      "base_clock_mhz": 166,
+      "memory_clock_mhz": 143,
+      "memory_bus_bits": 64,
+      "shading_units": 2,
+      "bus_interface": "AGP 2x"
+    },
+    "aliases": [
+      "315 Pro"
+    ],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4335",
+        "source_url": "https://www.techpowerup.com/gpu-specs/315-pro.c4335",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sis-315",
+    "name": "SiS 315",
+    "vendor": "sis",
+    "device_type": "discrete",
+    "release_date": "2000-12-11",
+    "memory": {
+      "capacity_gb": 0.064,
+      "type": "SDR",
+      "bandwidth_gbps": 2.7,
+      "unified": false
+    },
+    "specs": {
+      "chip": "Mirage",
+      "base_clock_mhz": 166,
+      "memory_clock_mhz": 166,
+      "memory_bus_bits": 128,
+      "shading_units": 2,
+      "bus_interface": "AGP 4x"
+    },
+    "aliases": [
+      "315"
+    ],
+    "interconnects": [],
+    "status": "discontinued",
+    "provenance": [
+      {
+        "source_id": "community-specification",
+        "source_record_id": "c4333",
+        "source_url": "https://www.techpowerup.com/gpu-specs/315.c4333",
+        "fields": [
+          "name",
+          "vendor",
+          "device_type",
+          "release_date",
+          "memory.capacity_gb",
+          "memory.type",
+          "memory.bandwidth_gbps",
+          "memory.unified",
+          "specs",
+          "status"
+        ]
+      }
+    ]
   }
 ]

@@ -23,6 +23,8 @@ test('catalog page exposes an accessible searchable data explorer shell', async 
   assert.match(html, /aria-labelledby="catalog-heading"/)
   assert.match(html, /href="\.\/catalog\.json"[^>]+download/)
   assert.match(html, /href="https:\/\/github\.com\/onepunk\/open-gpu-db"/)
+  assert.match(html, /href="https:\/\/github\.com\/onepunk\/open-gpu-db\/issues\/new"/)
+  assert.match(html, /Submit a GPU \/ update/)
   assert.match(html, /Searchable GPU database/)
   assert.match(html, /Search the GPU database\./)
   assert.match(html, /Search the database for graphics processors, accelerators, and/)
@@ -50,6 +52,19 @@ test('the explorer ships the themed workstation shell', async () => {
   // Dark and light appearances must both be represented.
   assert.match(themes, /appearance: 'dark'/)
   assert.match(themes, /appearance: 'light'/)
+})
+
+test('public copy uses neutral community-reference labels', async () => {
+  const copy = await Promise.all([
+    read('../README.md'),
+    read('../NOTICE'),
+    read('../CHANGELOG.md'),
+    read('../data/sources.json'),
+    read('../site/index.html'),
+    read('../site/source-links.mjs'),
+  ])
+
+  assert.match(copy.join('\n'), /Community specification/)
 })
 
 test('the repository defines a dependency-free static build and deploy setup', async () => {

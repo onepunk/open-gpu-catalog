@@ -322,6 +322,7 @@ body.record-open .layout {
 .state-panel strong { color: var(--ink); display: block; margin-bottom: 2px; }
 .state-panel > span { font: 600 16px var(--mono); color: var(--faint); }
 .state-error > span { color: var(--vendor-amd); }
+.state-panel a { color: var(--ink); text-underline-offset: 2px; }
 
 .loader {
   width: 14px;
@@ -516,6 +517,7 @@ body.record-open .record { display: block; }
 .foot-bar nav { display: flex; gap: 18px; }
 .foot-bar a { color: var(--muted); text-decoration: none; }
 .foot-bar a:hover { color: var(--ink); }
+.foot-bar .submit-link { color: var(--accent); }
 
 .theme-button {
   margin-left: auto;

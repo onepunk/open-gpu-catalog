@@ -12,7 +12,7 @@ async function loadBuildCatalog() {
 
 const DBGPU_SOURCE = {
   id: 'dbgpu',
-  name: 'dbgpu TechPowerUp dataset',
+  name: 'dbgpu dataset',
   kind: 'community',
   url: 'https://github.com/painebenjamin/dbgpu',
 }

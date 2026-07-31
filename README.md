@@ -13,12 +13,12 @@ No single public GPU database is both broad and authoritative. Open GPU DB
 uses a layered model:
 
 1. A pinned dataset from the MIT-licensed
-   [dbgpu](https://github.com/painebenjamin/dbgpu) project, derived from the
-   TechPowerUp GPU database, supplies broad NVIDIA, AMD, and Intel coverage.
+   [dbgpu](https://github.com/painebenjamin/dbgpu) project supplies broad
+   NVIDIA, AMD, and Intel coverage.
 2. Official manufacturer documentation overrides imported values when the
    sources disagree.
-3. Missing products, including Apple Silicon and current AI accelerators, are
-   maintained as explicit additions.
+3. Missing products backed by first-party documentation, including Apple
+   Silicon and current AI accelerators, are maintained as explicit additions.
 4. Detection aliases and derived interconnect rules are separate layers, so
    canonical specifications are not confused with browser or driver strings.
 5. The build validates identifiers, provenance, memory values, and name/alias
@@ -27,7 +27,8 @@ uses a layered model:
 The imported dbgpu dataset remains unmodified in
 `data/imports/dbgpu/`. Its tool version, checksum, license, and retrieval date
 are recorded in `metadata.json`. Each normalized record retains the original
-TechPowerUp record ID and URL where available.
+reference ID and URL where available. Maintained additions live in
+`data/layers/additions.json`.
 
 ## Artifacts
 
@@ -84,8 +85,8 @@ automatically: the Cloudflare Workers build runs the tests, the artifact check,
 and the page build before publishing. `npm run deploy` performs the same
 publish manually.
 The source audit reports which records have first-party vendor documentation,
-which currently rely on a specific third-party specification page, and which
-need source enrichment. Use `npm run audit:sources -- --json` for record IDs.
+which currently rely on a community specification reference, and which need
+source enrichment. Use `npm run audit:sources -- --json` for record IDs.
 
 ## Contributing data
 
@@ -103,6 +104,5 @@ precedence. Uncertain values should remain unknown rather than being guessed.
 ## Attribution and license
 
 Open GPU DB is licensed under Apache-2.0. It incorporates an attributed,
-pinned dataset from the MIT-licensed dbgpu project, which derives its data
-from the TechPowerUp GPU database. See [NOTICE](NOTICE), [LICENSE](LICENSE),
-and `data/imports/dbgpu/metadata.json`.
+pinned dataset from the MIT-licensed dbgpu project. See [NOTICE](NOTICE),
+[LICENSE](LICENSE), and `data/imports/dbgpu/metadata.json`.
