@@ -1,28 +1,29 @@
 # Open GPU DB
 
-A public, reproducible GPU catalog with stable identifiers, source provenance,
-vendor-verified corrections, browser-detection aliases, and generated artifacts
-for applications that need reliable GPU memory data.
+A public GPU database with stable identifiers, field-level source provenance,
+first-party corrections, detection aliases, and versioned JSON files for
+applications that need GPU specifications in a stable, machine-readable format.
 
 [Browse and search the database](https://opengpudb.com)
 or use the versioned JSON artifacts directly.
 
 ## Why this exists
 
-No single public GPU database is both broad and authoritative. Open GPU DB
-uses a layered model:
+Open GPU DB combines a broad imported dataset with maintained, source-linked
+changes through a layered build:
 
 1. A pinned dataset from the MIT-licensed
    [dbgpu](https://github.com/painebenjamin/dbgpu) project supplies broad
    NVIDIA, AMD, and Intel coverage.
-2. Official manufacturer documentation overrides imported values when the
-   sources disagree.
-3. Missing products backed by first-party documentation, including Apple
-   Silicon and current AI accelerators, are maintained as explicit additions.
+2. Maintained overrides correct imported values when first-party manufacturer
+   documentation disagrees with the imported data.
+3. Missing products are maintained as explicit additions. These include
+   first-party-sourced Apple Silicon and current AI accelerators, as well as
+   records that retain clear community-source provenance.
 4. Detection aliases and derived interconnect rules are separate layers, so
    canonical specifications are not confused with browser or driver strings.
 5. The build validates identifiers, provenance, memory values, and name/alias
-   uniqueness before publishing deterministic artifacts.
+   uniqueness before generating the JSON files in stable ID order.
 
 The imported dbgpu dataset remains unmodified in
 `data/imports/dbgpu/`. Its tool version, checksum, license, and retrieval date
@@ -30,12 +31,14 @@ are recorded in `metadata.json`. Each normalized record retains the original
 reference ID and URL where available. Maintained additions live in
 `data/layers/additions.json`.
 
-## Artifacts
+## JSON files
 
-- `dist/catalog.json` — the complete normalized catalog and source registry.
-- `dist/runtime.json` — a compact projection containing GPUs with usable
-  capacity and bandwidth data, unified-memory semantics, NVLink flags, aliases,
-  and integrated-GPU detection patterns.
+- `dist/catalog.json` — the complete normalized database and source registry.
+- `dist/runtime.json` — a compact, application-oriented subset of NVIDIA, AMD,
+  Intel, and Apple records with positive memory bandwidth and either unified
+  memory or at least 1 GB of dedicated VRAM. It includes dedicated VRAM
+  capacity where applicable, unified-memory and NVLink flags, aliases, and
+  integrated-GPU detection patterns.
 - `schema/catalog.schema.json` — the versioned public schema.
 
 Raw GitHub URL:
@@ -57,6 +60,7 @@ Canonical GPU records contain:
 - stable `id`, canonical `name`, `vendor`, and `device_type`;
 - architecture, generation, release date, and lifecycle status when known;
 - memory capacity, type, bandwidth, and unified-memory semantics;
+- optional silicon, clock, compute, power, interface, and graphics API details;
 - aliases used by browsers, drivers, and product marketing;
 - interconnect capabilities;
 - field-level provenance referencing the embedded source registry.
@@ -77,13 +81,14 @@ npm run build:pages
 npm run audit:sources
 ```
 
-`npm run build` regenerates both committed artifacts. `npm run check` fails when
-the committed artifacts differ from their deterministic build. `npm run build:pages`
-copies the dependency-free search interface and complete catalog into `.pages/`.
-Pushing to `main` deploys the site to [opengpudb.com](https://opengpudb.com)
-automatically: the Cloudflare Workers build runs the tests, the artifact check,
-and the page build before publishing. `npm run deploy` performs the same
-publish manually.
+`npm run build` regenerates both committed JSON files from the checked-in import
+and maintenance layers. Given the same inputs and build code, it emits the same
+byte-for-byte output; `npm run check` verifies that the committed files match.
+`npm run build:pages` copies the dependency-free search interface and complete
+database into `.pages/`. The GitHub Actions workflow runs the tests, artifact
+check, and page build for pull requests and pushes to `main`. To publish the
+site to [opengpudb.com](https://opengpudb.com) manually, run
+`npm run build:pages && npm run deploy`.
 The source audit reports which records have first-party vendor documentation,
 which currently rely on a TechPowerUp specification reference, and which need
 source enrichment. Use `npm run audit:sources -- --json` for record IDs.
