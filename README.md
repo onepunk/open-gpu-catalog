@@ -35,9 +35,10 @@ reference ID and URL where available. Maintained additions live in
 
 - `dist/catalog.json` — the complete normalized database and source registry.
 - `dist/runtime.json` — a compact, application-oriented subset of NVIDIA, AMD,
-  Intel, and Apple records with usable memory data. It includes dedicated VRAM
-  capacity where applicable, memory bandwidth, unified-memory and NVLink flags,
-  aliases, and integrated-GPU detection patterns.
+  Intel, and Apple records with positive memory bandwidth and either unified
+  memory or at least 1 GB of dedicated VRAM. It includes dedicated VRAM
+  capacity where applicable, unified-memory and NVLink flags, aliases, and
+  integrated-GPU detection patterns.
 - `schema/catalog.schema.json` — the versioned public schema.
 
 Raw GitHub URL:
