@@ -7,6 +7,7 @@
 - Correct the AMD Instinct MI455X and Intel Arc Pro B65/B70 release metadata
   from current first-party documentation.
 - Add links for submitting a GPU or catalog update through GitHub Issues.
+- Identify specification references by their website name in the source list.
 
 ## 1.3.0 — 2026-07-30
 

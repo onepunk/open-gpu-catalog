@@ -54,7 +54,7 @@ test('the explorer ships the themed workstation shell', async () => {
   assert.match(themes, /appearance: 'light'/)
 })
 
-test('public copy uses neutral community-reference labels', async () => {
+test('source labels identify the referenced website', async () => {
   const copy = await Promise.all([
     read('../README.md'),
     read('../NOTICE'),
@@ -64,7 +64,7 @@ test('public copy uses neutral community-reference labels', async () => {
     read('../site/source-links.mjs'),
   ])
 
-  assert.match(copy.join('\n'), /Community specification/)
+  assert.match(copy.join('\n'), /TechPowerUp specification/)
 })
 
 test('the repository defines a dependency-free static build and deploy setup', async () => {

@@ -1,5 +1,5 @@
 const DESTINATIONS = [
-  { domain: 'techpowerup.com', label: 'Community specification', primary: false },
+  { domain: 'techpowerup.com', label: 'TechPowerUp specification', primary: false },
   { domain: 'nvidia.com', label: 'NVIDIA documentation', primary: true },
   { domain: 'amd.com', label: 'AMD documentation', primary: true },
   { domain: 'intel.com', label: 'Intel documentation', primary: true },

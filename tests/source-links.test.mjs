@@ -9,7 +9,7 @@ async function loadSourceLinks() {
   }
 }
 
-test('a record-level source URL receives a neutral community label', async () => {
+test('a record-level source URL is labelled with its website name', async () => {
   const { buildSourceLinks } = await loadSourceLinks()
   assert.equal(typeof buildSourceLinks, 'function', 'buildSourceLinks must be implemented')
 
@@ -32,7 +32,7 @@ test('a record-level source URL receives a neutral community label', async () =>
   )
 
   assert.deepEqual(links, [{
-    label: 'Community specification',
+    label: 'TechPowerUp specification',
     url: 'https://www.techpowerup.com/gpu-specs/geforce-rtx-5090.c4216',
     primary: false,
   }])
@@ -75,7 +75,7 @@ test('vendor documentation is preferred while exact links are deduplicated', asy
       primary: true,
     },
     {
-      label: 'Community specification',
+      label: 'TechPowerUp specification',
       url: directSpecification,
       primary: false,
     },

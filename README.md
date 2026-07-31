@@ -85,7 +85,7 @@ automatically: the Cloudflare Workers build runs the tests, the artifact check,
 and the page build before publishing. `npm run deploy` performs the same
 publish manually.
 The source audit reports which records have first-party vendor documentation,
-which currently rely on a community specification reference, and which need
+which currently rely on a TechPowerUp specification reference, and which need
 source enrichment. Use `npm run audit:sources -- --json` for record IDs.
 
 ## Contributing data
