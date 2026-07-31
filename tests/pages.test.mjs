@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readFile, stat } from 'node:fs/promises'
 import test from 'node:test'
 
 async function read(path) {
@@ -29,6 +29,15 @@ test('catalog page exposes an accessible searchable data explorer shell', async 
   assert.match(html, /Search the GPU database\./)
   assert.match(html, /Search the database for graphics processors, accelerators, and/)
   assert.match(html, /id="gpu-count"/)
+  assert.match(html, /rel="icon" href="\.\/favicon\.ico"/)
+  assert.match(html, /rel="icon" type="image\/png" href="\.\/favicon\.png"/)
+  assert.match(html, /rel="apple-touch-icon" href="\.\/apple-touch-icon\.png"/)
+  const iconSizes = await Promise.all([
+    stat(new URL('../site/favicon.ico', import.meta.url)),
+    stat(new URL('../site/favicon.png', import.meta.url)),
+    stat(new URL('../site/apple-touch-icon.png', import.meta.url)),
+  ])
+  assert.ok(iconSizes.every(icon => icon.size > 0))
   assert.doesNotMatch(html, /id="source-count"|id="catalog-version"/)
   assert.doesNotMatch(html, /Find the GPU behind the numbers|Open data · Vendor-verified/)
   assert.doesNotMatch(html, /Source-backed fields|Data should be uncertain/)
